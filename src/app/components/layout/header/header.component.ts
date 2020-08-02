@@ -12,16 +12,5 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  toggleLink(event, link) {
-    console.log(link)
-    const links = document.querySelectorAll('.active');
-    
-    for (let i = 0; i < links.length; i++) {
-      links[i].classList.remove('active');
-    }
-    event.target.closest(".parent-link").classList.add('active');
-    document.getElementById("collapseMenu").click();
-    this.router.navigate([link]);
-  }
-
+  
 }

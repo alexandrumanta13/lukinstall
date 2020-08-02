@@ -1,117 +1,66 @@
-/* You can add global styles to this file, and also import other style files */
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
+.button-primary {
+  .button-primary-text {
+    -webkit-transform: translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+    -moz-transform: translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+    -ms-transform: translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+    transform: translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+    opacity: 1;
+    transition: all 380ms;
 
-.pl-40 {
-  padding-left: 40px;
-}
+    &.for-hover {
+      opacity: 0;
+      display: block;
+      -webkit-transform: translate3d(0, 20PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+      -moz-transform: translate3d(0, 20PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+      -ms-transform: translate3d(0, 20PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+      transform: translate3d(0, 20PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+      transition: all 380ms;
+    }
+  }
 
-.pr-40 {
-  padding-right: 40px;
-}
+  &:hover {
+    .button-primary-text {
+      transform: translate3d(0px, -20px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+      opacity: 0;
+      transform-style: preserve-3d;
 
-.ng-image-slider .ng-image-slider-container .main .next,
-.ng-image-slider .ng-image-slider-container .main .prev {
-  border-radius: 0 !important;
-  background-color: #F9D11D !important;
-  color: #333 !important;
-}
-
-.ng-image-slider .ng-image-slider-container .main .next:hover,
-.ng-image-slider .ng-image-slider-container .main .prev:hover {
-  text-decoration: none !important;
-}
-
-.ng-image-slider {
-  margin: 4rem 0;
-}
-
-a,
-.widget ul li a i {
-  color: #F9D11D;
-}
-
-a:hover {
-  cursor: pointer;
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: #F9D11D;
-}
-
-.menu-block {
-  &.navbar-fixed-top {
-    @media only screen and (max-width: 767px) and (min-width: 319px) {
-      background-color: #fff;
-      box-shadow:
-        0 2.8px 2.2px rgba(0, 0, 0, 0.02),
-        0 6.7px 5.3px rgba(0, 0, 0, 0.028),
-        0 12.5px 10px rgba(0, 0, 0, 0.035),
-        0 22.3px 17.9px rgba(0, 0, 0, 0.042),
-        0 41.8px 33.4px rgba(0, 0, 0, 0.05),
-        0 100px 80px rgba(0, 0, 0, 0.07);
-
-      img {
-        width: 80%;
+      &.for-hover {
+        opacity: 1;
+        display: block;
+        transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+        transform-style: preserve-3d;
       }
     }
   }
-  .navbar-default .navbar-nav > li .dropdown-menu li a {
-    text-transform: none;
-  }
 }
 
-@media only screen and (max-width: 767px) and (min-width: 319px) {
-  .call-us {
-    position: absolute;
-    z-index: 999;
-    width: 90%;
-    left: 0;
-    top: 20px;
-    justify-content: flex-start !important;
 
-    img {
-      background: #fff;
-      padding: 8px 4px;
-      margin-top: 20px;
-      border-radius: 4px;
-    }
+.cta-link {
+  .fa.c-cta1_arrow-hovered {
+    opacity: 0;
+    transform: translate3d(-30px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    transition: all 380ms;
   }
 
-  .logo-block .call-us p {
-    color: #fff;
+  .fa.c-cta1__arrow-normal {
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    opacity: 1;
+    transition: all 380ms;
+  }
 
-    span {
-      color: #fff;
+  &:hover {
+    .fa.c-cta1_arrow-hovered {
+      opacity: 1;
+      transform: translate3d(10px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+      transform-style: preserve-3d;
     }
 
+    .fa.c-cta1__arrow-normal {
+      transform: translate3d(32px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+      transform-style: preserve-3d;
+      opacity: 0;
+    }
   }
 }
-
-@media (max-width: 991px) {
-  .menu-block .navbar-nav li {
-    a {
-      color: #333;
-    }
-
-    &.active {
-      a {
-        color: #F9D11D !important;
-      }
-    }
-  }
-
-  .services-content-area {
-    padding-top: 40px;
-  }
-}
-
-@media (max-width: 991px) {
-  .menu-block .navbar-nav>li:last-child {
-    display: block;
-  }
-}
-
