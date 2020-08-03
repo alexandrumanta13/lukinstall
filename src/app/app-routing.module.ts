@@ -21,7 +21,7 @@ const routes: Routes = [
   {
     path: '', component: HomeComponent,
     data: {
-      title: 'Curatenie perfecta',
+      title: 'Expert conta',
       description: 'Description Meta Tag Content',
       ogUrl: 'your og url'
     }
