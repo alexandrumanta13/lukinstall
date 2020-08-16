@@ -15,6 +15,7 @@ import { GdprComponent } from './pages/gdpr/gdpr.component';
 import { ConfidentialityComponent } from './pages/confidentiality/confidentiality.component';
 import { CookiesComponent } from "./pages/cookies/cookies.component";
 import { TermsComponent } from "./pages/terms/terms.component";
+import { ContabilitateSrlComponent } from './pages/contabilitate-srl/contabilitate-srl.component';
 
 
 const routes: Routes = [
@@ -30,12 +31,20 @@ const routes: Routes = [
   {
     path: 'despre-noi', component: AboutComponent,
     data: {
+      title: 'servicii contabilitate srl',
+      description: 'Oferim servicii de contabilitate srl, financiare si de consultanta intr-o serie de industrii punand la dispozitie toata informatia necesara pentru a prospera.',
+      ogUrl: 'your og url'
+    }
+  },
+
+  {
+    path: 'servicii-contabilitate-srl', component: ContabilitateSrlComponent,
+    data: {
       title: 'Despre noi',
       description: 'Apeleaza la servicii profesionale de curatenie la domiciliu. Suntem o firma de curatenie ce oferim servicii in Bucuresti si Ilfov. Preturi competitive.Description Meta Tag Content',
       ogUrl: 'your og url'
     }
   },
-
   
 
   {

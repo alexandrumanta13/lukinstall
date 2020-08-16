@@ -26,6 +26,7 @@ import { PricesComponent } from './pages/prices/prices.component';
 import { WhatsappComponent } from './components/whatsapp/whatsapp.component';
 import { SliderComponent } from './pages/home/slider/slider.component';
 import { ServicesComponent } from './pages/home/services/services.component';
+import { ContabilitateSrlComponent } from './pages/contabilitate-srl/contabilitate-srl.component';
 
   
 
@@ -48,6 +49,7 @@ import { ServicesComponent } from './pages/home/services/services.component';
     WhatsappComponent,
     SliderComponent,
     ServicesComponent,
+    ContabilitateSrlComponent,
     
   ],
   imports: [

@@ -64,3 +64,32 @@
     }
   }
 }
+
+.cta-link {
+
+  &.reverse {
+    .fa.c-cta1_arrow-hovered {
+      transform: translate3d(30px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(180deg) rotateZ(0deg) skew(0deg, 0deg);
+      
+    }
+
+    .fa.c-cta1__arrow-normal {
+      transform: translate3d(0px, 0px, 0) scale3d(1, 1, 1) rotateX(0deg) rotateY(180deg) rotateZ(0deg) skew(0deg, 0deg);
+    }
+
+    &:hover {
+      .fa.c-cta1_arrow-hovered {
+        transform: translate3d(10px, 0px, -0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(180deg) rotateZ(0deg) skew(0deg, 0deg);
+      }
+
+      .fa.c-cta1__arrow-normal {
+        transform: translate3d(-32px, 0px, 0) scale3d(1, 1, 1) rotateX(0deg) rotateY(180deg) rotateZ(0deg) skew(0deg, 0deg);
+      }
+    }
+  }
+  
+  
+}
+
+
+
