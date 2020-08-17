@@ -33,6 +33,8 @@ import { ServiciiContabilitatePfaIiIfComponent } from './pages/servicii-contabil
 import { ServicesSidebarComponent } from './components/layout/services-sidebar/services-sidebar.component';
 import { QuoteSidebarComponent } from './components/layout/quote-sidebar/quote-sidebar.component';
 import { TestimonialsComponent } from './components/layout/testimonials/testimonials.component';
+import { QuickContactFormComponent } from './components/quick-contact-form/quick-contact-form.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
   
 
@@ -62,20 +64,21 @@ import { TestimonialsComponent } from './components/layout/testimonials/testimon
     ServicesSidebarComponent,
     QuoteSidebarComponent,
     TestimonialsComponent,
+    QuickContactFormComponent,
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-
+    FormsModule,
     HttpClientModule,
-
+    ReactiveFormsModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
 
     
   ],
   exports: [
-    
+    QuickContactFormComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
