@@ -10,7 +10,7 @@ import { filter, map, mergeMap } from 'rxjs/operators';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'asdadax';
+ 
   constructor(
     private router: Router,
     private activatedRoute: ActivatedRoute,
@@ -41,7 +41,11 @@ export class AppComponent {
       if (!(evt instanceof NavigationEnd)) {
         return;
       }
-      window.scrollTo(0, 0)
+      const hover = document.querySelector('.nav-dropdown-toggle');
+      const dropdown = document.querySelector('.dropdown-list');
+      hover.classList.remove('w--open');
+      dropdown.classList.remove('w--open');
+      window.scrollTo(0, 0);
     });
   }
 }

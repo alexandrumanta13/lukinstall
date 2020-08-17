@@ -3,12 +3,12 @@
   <div class="navigation-and-offcanvas">
     <div class="col no-margin-bottom lg-5 md-basis-uato">
       <nav class="navigation-menu">
-        <a href="index.html" class="nav-link w--current">Acasa</a>
+        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-link w--current">Acasa</a>
 
-        <div data-hover="1" data-delay="0" data-w-id="83a36909-9554-440b-ec90-d232c2c0c83d"
+        <div data-hover="1" data-delay="0"
           class="nav-dropdown w-dropdown">
           <div class="nav-dropdown-toggle w-dropdown-toggle">
-            <a href="services.html" class="nav-link-block w-inline-block">
+            <a  class="nav-link-block w-inline-block">
               <div>Servicii</div>
               <div class="dropdown-icon w-icon-dropdown-toggle"></div>
             </a>
@@ -16,9 +16,9 @@
           <nav class="dropdown-list w-dropdown-list">
 
             <a routerLink="servicii-contabilitate-srl" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="dropdown-link w-dropdown-link">Contabilitate SRL</a>
-            <a routerLink="servicii-contabilitate-srl" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="dropdown-link w-dropdown-link">Salarizare si Resurse Umane</a>
-            <a routerLink="servicii-contabilitate-srl" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="dropdown-link w-dropdown-link">Consultanta Fiscala</a>
-            <a routerLink="servicii-contabilitate-srl" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="dropdown-link w-dropdown-link">Contabilitate PFA, II, IF</a>
+            <a routerLink="servicii-salarizare-resurse-umane" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="dropdown-link w-dropdown-link">Salarizare si Resurse Umane</a>
+            <a routerLink="servicii-consultanta-fiscala-contabila" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="dropdown-link w-dropdown-link">Consultanta Fiscala</a>
+            <a routerLink="servicii-contabilitate-pfa-ii-if" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="dropdown-link w-dropdown-link">Contabilitate PFA, II, IF</a>
 
 
 
@@ -31,9 +31,9 @@
       <a href="#" class="brand w-inline-block"><img src="/assets/images/logo.svg" alt=""></a></div>
     <div class="col no-margin-bottom lg-5">
       <nav class="navigation-menu justify-end">
-        <a href="about.html" class="nav-link">Despre noi</a>
-        <a href="general-contact.html" class="nav-link">Contact</a>
-        <a href="quote.html"
+        <a routerLink="/despre-noi" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-link">Despre noi</a>
+        <a routerLink="/contact" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-link">Contact</a>
+        <a routerLink="/contact" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"
           class="button-primary animated is-small alignself-center w-inline-block">
           <div class="button-primary-text">Cere oferta</div>
           <div class="button-primary-text for-hover">Hai sa vorbim <span class="fa margin-left"></span></div>

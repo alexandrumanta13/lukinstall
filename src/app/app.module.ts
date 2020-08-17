@@ -27,6 +27,12 @@ import { WhatsappComponent } from './components/whatsapp/whatsapp.component';
 import { SliderComponent } from './pages/home/slider/slider.component';
 import { ServicesComponent } from './pages/home/services/services.component';
 import { ContabilitateSrlComponent } from './pages/contabilitate-srl/contabilitate-srl.component';
+import { SalarizareResurseUmaneComponent } from './pages/salarizare-resurse-umane/salarizare-resurse-umane.component';
+import { ServiciiConsultantaFiscalaContabilaComponent } from './pages/servicii-consultanta-fiscala-contabila/servicii-consultanta-fiscala-contabila.component';
+import { ServiciiContabilitatePfaIiIfComponent } from './pages/servicii-contabilitate-pfa-ii-if/servicii-contabilitate-pfa-ii-if.component';
+import { ServicesSidebarComponent } from './components/layout/services-sidebar/services-sidebar.component';
+import { QuoteSidebarComponent } from './components/layout/quote-sidebar/quote-sidebar.component';
+import { TestimonialsComponent } from './components/layout/testimonials/testimonials.component';
 
   
 
@@ -50,6 +56,12 @@ import { ContabilitateSrlComponent } from './pages/contabilitate-srl/contabilita
     SliderComponent,
     ServicesComponent,
     ContabilitateSrlComponent,
+    SalarizareResurseUmaneComponent,
+    ServiciiConsultantaFiscalaContabilaComponent,
+    ServiciiContabilitatePfaIiIfComponent,
+    ServicesSidebarComponent,
+    QuoteSidebarComponent,
+    TestimonialsComponent,
     
   ],
   imports: [

@@ -16,6 +16,9 @@ import { ConfidentialityComponent } from './pages/confidentiality/confidentialit
 import { CookiesComponent } from "./pages/cookies/cookies.component";
 import { TermsComponent } from "./pages/terms/terms.component";
 import { ContabilitateSrlComponent } from './pages/contabilitate-srl/contabilitate-srl.component';
+import { SalarizareResurseUmaneComponent } from './pages/salarizare-resurse-umane/salarizare-resurse-umane.component';
+import { ServiciiConsultantaFiscalaContabilaComponent } from './pages/servicii-consultanta-fiscala-contabila/servicii-consultanta-fiscala-contabila.component';
+import { ServiciiContabilitatePfaIiIfComponent } from './pages/servicii-contabilitate-pfa-ii-if/servicii-contabilitate-pfa-ii-if.component';
 
 
 const routes: Routes = [
@@ -31,7 +34,7 @@ const routes: Routes = [
   {
     path: 'despre-noi', component: AboutComponent,
     data: {
-      title: 'servicii contabilitate srl',
+      title: 'Despre noi',
       description: 'Oferim servicii de contabilitate srl, financiare si de consultanta intr-o serie de industrii punand la dispozitie toata informatia necesara pentru a prospera.',
       ogUrl: 'your og url'
     }
@@ -40,18 +43,46 @@ const routes: Routes = [
   {
     path: 'servicii-contabilitate-srl', component: ContabilitateSrlComponent,
     data: {
-      title: 'Despre noi',
-      description: 'Apeleaza la servicii profesionale de curatenie la domiciliu. Suntem o firma de curatenie ce oferim servicii in Bucuresti si Ilfov. Preturi competitive.Description Meta Tag Content',
+      title: 'servicii contabilitate srl',
+      description: 'Oferim servicii de contabilitate srl, financiare si de consultanta intr-o serie de industrii punand la dispozitie toata informatia necesara pentru a prospera.',
       ogUrl: 'your og url'
     }
   },
   
+  {
+    path: 'servicii-salarizare-resurse-umane', component: SalarizareResurseUmaneComponent,
+    data: {
+      title: 'servicii salarizare resurse umane',
+      description: ' Echipa noastra va ajuta sa profitați de oportunitatile care exista, oferind solutii potrivite de salarizare si resurse umane in Bucuresti si Ilfov.',
+      ogUrl: 'your og url'
+    }
+  },
+
+  {
+    path: 'servicii-consultanta-fiscala-contabila', component: ServiciiConsultantaFiscalaContabilaComponent,
+    data: {
+      title: 'consultanta fiscala',
+      description: 'Ca antreprenor, este destul de complicat sa tii pasul cu schimbarile la nivel de legislatie, de aceea recomandam servicii de consultanta fiscala in Bucuresti si Ilfov.',
+      ogUrl: 'your og url'
+    }
+  },
+  {
+    path: 'servicii-contabilitate-pfa-ii-if', component: ServiciiContabilitatePfaIiIfComponent,
+    data: {
+      title: 'servicii contabilitate PFA',
+      description: 'Serviciile noastre de contabilitate pfa sunt bazate pe calitate si experienta, de aceea costurile sunt avantajoase, transparente si justificate.',
+      ogUrl: 'your og url'
+    }
+  },
+
+  
+
 
   {
     path: 'preturi', component: PricesComponent,
     data: {
       title: 'Preturi',
-      description: 'Apeleaza la servicii profesionale de curatare mocheta si covor la domiciliu. Suntem o firma de curatenie ce oferim servicii in Bucuresti si Ilfov. Preturi competitive.',
+      description: '',
       ogUrl: 'your og url'
     }
   },
@@ -60,7 +91,7 @@ const routes: Routes = [
     path: 'setari-gdpr', component: GdprComponent,
     data: {
       title: 'Setari GDPR',
-      description: 'Apeleaza la servicii profesionale de curatare mocheta si covor la domiciliu. Suntem o firma de curatenie ce oferim servicii in Bucuresti si Ilfov. Preturi competitive.',
+      description: '',
       ogUrl: 'your og url'
     }
   },
@@ -69,15 +100,15 @@ const routes: Routes = [
     path: 'confidentialitate', component: ConfidentialityComponent,
     data: {
       title: 'Confidentialitate',
-      description: 'Apeleaza la servicii profesionale de curatare mocheta si covor la domiciliu. Suntem o firma de curatenie ce oferim servicii in Bucuresti si Ilfov. Preturi competitive.',
+      description: '',
       ogUrl: 'your og url'
     }
   },
   {
-    path: 'setari-cookies', component: CookiesComponent,
+    path: 'politica-cookies', component: CookiesComponent,
     data: {
-      title: 'Setari cookies',
-      description: 'Apeleaza la servicii profesionale de curatare mocheta si covor la domiciliu. Suntem o firma de curatenie ce oferim servicii in Bucuresti si Ilfov. Preturi competitive.',
+      title: 'politica cookies',
+      description: '',
       ogUrl: 'your og url'
     }
   },
@@ -85,7 +116,7 @@ const routes: Routes = [
     path: 'termeni-si-conditii', component: TermsComponent,
     data: {
       title: 'Termeni si conditii',
-      description: 'Apeleaza la servicii profesionale de curatare mocheta si covor la domiciliu. Suntem o firma de curatenie ce oferim servicii in Bucuresti si Ilfov. Preturi competitive.',
+      description: '',
       ogUrl: 'your og url'
     }
   },
@@ -93,13 +124,13 @@ const routes: Routes = [
     path: 'contact', component: ContactComponent,
     data: {
       title: 'Contact',
-      description: 'Apeleaza la servicii profesionale de curatare mocheta si covor la domiciliu. Suntem o firma de curatenie ce oferim servicii in Bucuresti si Ilfov. Preturi competitive.',
+      description: '',
       ogUrl: 'your og url'
     }
   },
   { path: '404', component: NotFoundComponent },
 
-  { path: 'thank-you', component: ThankYouComponent },
+  { path: 'mesaj-trimis', component: ThankYouComponent },
 
   { path: '**', redirectTo: '/404' }
 ];

@@ -1,0 +1,19 @@
+.w-slide {
+  .flexh-align-center {
+    justify-content: center;
+  }
+}
+
+.header-image {
+  z-index: 1;
+}
+
+
+.has-bg-image2 .container {
+    z-index: 2;
+    position: relative;
+}
+
+.button-primary {
+    transition: none;
+}

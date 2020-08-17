@@ -5,25 +5,32 @@
       <div class="container container-nested">
         <div class="col lg-4 md-12 no-margin-bottom-lg">
           <h4 class="on-dark">Linkuri</h4>
-          <a href="#" class="footer-nav-link on-dark">Despre noi</a>
-          <a href="#" class="footer-nav-link on-dark">Servicii</a>
-          <a href="#" class="footer-nav-link on-dark">Contact</a>
+          <a routerLink="/despre-noi" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="footer-nav-link on-dark">Despre noi</a>
+          <a class="footer-nav-link on-dark">Servicii</a>
+          <a routerLink="/contact" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="footer-nav-link on-dark">Contact</a>
 
         </div>
         <div class="col lg-4 md-12 no-margin-bottom-lg">
           <h4 class="on-dark">Servicii</h4>
-          <a routerLink="servicii-contabilitate-srl" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="footer-nav-link on-dark">Contabilitate SRL</a>
-          <a routerLink="servicii-contabilitate-srl" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="footer-nav-link on-dark">Salarizare si Resurse Umane</a>
-          <a routerLink="servicii-contabilitate-srl" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="footer-nav-link on-dark">Consultanta Fiscala</a>
-          <a routerLink="servicii-contabilitate-srl" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="footer-nav-link on-dark">Contabilitate PFA, II, IF</a>
-       
+          <a routerLink="servicii-contabilitate-srl" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"
+            class="footer-nav-link on-dark">Contabilitate SRL</a>
+          <a routerLink="servicii-salarizare-resurse-umane" routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact: true}" class="footer-nav-link on-dark">Salarizare si Resurse Umane</a>
+          <a routerLink="servicii-consultanta-fiscala-contabila" routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact: true}" class="footer-nav-link on-dark">Consultanta Fiscala</a>
+          <a routerLink="servicii-contabilitate-pfa-ii-if" routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact: true}" class="footer-nav-link on-dark">Contabilitate PFA, II, IF</a>
+
         </div>
         <div class="col lg-4 md-12 no-margin-bottom">
           <h4 class="on-dark">Utile</h4>
-          <a href="#" class="footer-nav-link on-dark">Setari GDPR </a>
-          <a href="#" class="footer-nav-link on-dark">Confidentialitate </a>
-          <a href="#" class="footer-nav-link on-dark">Politica Cookies </a>
-          <a href="#" class="footer-nav-link on-dark">Termeni si Conditii</a>
+          <a href="javascript:Cookiebot.show()" class="footer-nav-link on-dark">Setari GDPR </a>
+          <a routerLink="confidentialitate" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"
+            class="footer-nav-link on-dark">Confidentialitate </a>
+          <a routerLink="politica-cookies" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"
+            class="footer-nav-link on-dark">Politica Cookies </a>
+          <a routerLink="termeni-si-conditii" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"
+            class="footer-nav-link on-dark">Termeni si Conditii</a>
         </div>
       </div>
     </div>
@@ -37,8 +44,12 @@
   <div class="container">
     <div class="col lg-6 no-margin-bottom md-12 md-order-last">
       <div class="low-text-contrast text-small flexh-space-between md-flex-vertical">
-        <div class="md-order-last">©2020 Cert Account </div><a href="#" class="footer-bottom-link">Politica de
-          confidentialite</a><a href="#" class="footer-bottom-link">Termeni si conditii</a>
+        <div class="md-order-last">©2020 Cert Account </div>
+        <a routerLink="confidentialitate" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"
+          class="footer-bottom-link">Politica de
+          confidentialite</a>
+        <a routerLink="termeni-si-conditii" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"
+          class="footer-bottom-link">Termeni si conditii</a>
       </div>
     </div>
     <div class="col lg-6 no-margin-bottom md-12">
