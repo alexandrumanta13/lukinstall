@@ -17,6 +17,7 @@ export class AppComponent {
     private _seoService: SEOServiceService
   ) { }
 
+  menu: boolean = false;
 
 
   ngOnInit() {
@@ -45,7 +46,12 @@ export class AppComponent {
       const dropdown = document.querySelector('.dropdown-list');
       hover.classList.remove('w--open');
       dropdown.classList.remove('w--open');
+      this.menu = false;
       window.scrollTo(0, 0);
     });
+  }
+
+  toggleMenu() {
+    this.menu = !this.menu;
   }
 }

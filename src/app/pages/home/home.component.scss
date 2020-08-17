@@ -18,3 +18,24 @@
     height: auto;
   }
 }
+
+.c-vertical-form {
+  width: 50%;
+}
+
+@media (max-width: 479px) {
+  .portfolio-images {
+    flex-direction: column;
+
+    img {
+      width: 100%;
+      margin: 8px;
+    }
+  }
+
+  .c-vertical-form {
+    width: 100%;
+  }
+}
+
+

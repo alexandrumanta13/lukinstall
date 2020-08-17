@@ -17,3 +17,11 @@
 .button-primary {
     transition: none;
 }
+
+@media (max-width: 479px) {
+  .basis400 {
+    .button-primary {
+      margin:8px 0;
+    }
+}
+}

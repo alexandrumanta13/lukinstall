@@ -1,6 +1,6 @@
-<header class="navigation-section position-absolute">
+<header class="navigation-section position-absolute" [class.open]="menu">
   <div class="navigation-overlay"></div>
-  <div class="navigation-and-offcanvas">
+  <div class="navigation-and-offcanvas" [class.open]="menu">
     <div class="col no-margin-bottom lg-5 md-basis-uato">
       <nav class="navigation-menu">
         <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-link w--current">Acasa</a>
@@ -8,7 +8,7 @@
         <div data-hover="1" data-delay="0"
           class="nav-dropdown w-dropdown">
           <div class="nav-dropdown-toggle w-dropdown-toggle">
-            <a  class="nav-link-block w-inline-block">
+            <a href="#" class="nav-link-block w-inline-block">
               <div>Servicii</div>
               <div class="dropdown-icon w-icon-dropdown-toggle"></div>
             </a>
@@ -28,7 +28,7 @@
     </div>
 
     <div class="col lg-2 md-basis-auto md-order-first no-margin-bottom-lg">
-      <a href="#" class="brand w-inline-block"><img src="/assets/images/logo.svg" alt=""></a></div>
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="brand w-inline-block"><img src="/assets/images/logo.svg" alt=""></a></div>
     <div class="col no-margin-bottom lg-5">
       <nav class="navigation-menu justify-end">
         <a routerLink="/despre-noi" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-link">Despre noi</a>
@@ -40,13 +40,13 @@
         </a>
       </nav>
     </div>
-    <a data-w-id="83a36909-9554-440b-ec90-d232c2c0c85f" href="#" class="c-nav__close-button w-inline-block">
+    <a href="#" (click)="toggleMenu()" class="c-nav__close-button w-inline-block">
       <div class="iconfont is-offcanvas-close-button"><em class="iconfont__no-italize"></em></div>
     </a>
   </div>
-  <div class="mobile-navigation-bar"><a href="#" class="brand w-inline-block"><img src="/assets/images/logo.svg" alt=""
+  <div class="mobile-navigation-bar"><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="brand w-inline-block"><img src="/assets/images/logo.svg" alt=""
         class="logo-image"></a>
-    <a data-w-id="83a36909-9554-440b-ec90-d232c2c0c868" href="#" class="burger-button w-inline-block">
+    <a href="#" (click)="toggleMenu()" class="burger-button w-inline-block">
       <div class="iconfont is-burger"><em class="iconfont__no-italize"></em></div>
     </a>
   </div>
