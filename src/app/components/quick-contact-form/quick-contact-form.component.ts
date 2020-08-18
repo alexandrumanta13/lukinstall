@@ -51,7 +51,7 @@ export class QuickContactFormComponent implements OnInit {
       .subscribe(
         response => {
           //this.closeModal.nativeElement.click()
-          document.getElementById("closeModal").click()
+         
           this.router.navigate(['/mesaj-trimis'])
         }
       )

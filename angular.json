@@ -37,8 +37,8 @@
               "src/styles.scss"
             ],
             "scripts": [
-              "src/assets/js/jquery-3.4.1.min.js",	
-              "src/assets/js/quaid.js"
+              "src/assets/js/jquery-3.4.1.min.js"
+             
               
             ]
           },
