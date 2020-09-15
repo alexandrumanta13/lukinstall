@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "expert-conta": {
+    "lukinstall": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/expert-conta",
+            "outputPath": "dist/lukinstall",
            
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -31,14 +31,22 @@
        
             ],
             "styles": [
-              "src/assets/css/components.css",
-              "src/assets/css/normalize.css",
-              "src/assets/css/quaid.css",
-              "src/styles.scss"
+              "src/assets/css/bootstrap.css",
+              "src/assets/css/style.css",
+              "src/assets/css/responsive.css"
             ],
             "scripts": [
-              "src/assets/js/jquery-3.4.1.min.js"
-             
+             "src/assets/js/jquery.js",
+             "src/assets/js/popper.min.js",
+             "src/assets/js/bootstrap.min.js",
+             "src/assets/js/jquery.mCustomScrollbar.concat.min.js",
+             "src/assets/js/jquery.fancybox.js",
+             "src/assets/js/appear.js",
+             "src/assets/js/owl.js",
+             "src/assets/js/wow.js",
+             "src/assets/js/jquery-ui.js",
+             "src/assets/js/script.js",
+             "src/assets/js/map-script.js"
               
             ]
           },
@@ -78,18 +86,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "expert-conta:build"
+            "browserTarget": "lukinstall:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "expert-conta:build:production"
+              "browserTarget": "lukinstall:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "expert-conta:build"
+            "browserTarget": "lukinstall:build"
           }
         },
         "test": {
@@ -127,15 +135,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "expert-conta:serve"
+            "devServerTarget": "lukinstall:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "expert-conta:serve:production"
+              "devServerTarget": "lukinstall:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "expert-conta"
+  "defaultProject": "lukinstall"
 }

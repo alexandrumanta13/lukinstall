@@ -25,10 +25,10 @@
                       Jos.
                     </p>
                   </div>
-                  <div>
-                    <a href="tel:+40724374126">0724374126</a> <br>
-                    <a href="tel:+40739913168">0739913168</a><br>
-                    <a href="mail:birou@expert-conta.ro">birou@expert-conta.ro</a><br>
+                  <div class="contact-details">
+                    <a href="tel:+40724374126"><img src="/assets/images/phone--1.svg" alt=""> 0724374126</a> <br>
+                    <a href="tel:+40739913168"><img src="/assets/images/phone--2.svg" alt="">0739913168</a><br>
+                    <a href="mail:birou@lukinstall.ro"><img src="/assets/images/email.svg" alt="">birou@lukinstall.ro</a><br>
                   </div>
                 </div>
                 <div class="col lg-1"></div>
@@ -41,7 +41,7 @@
                   </div>
 
                   <select name="categories" id="categories" formControlName="categories" [(ngModel)]="categories" class="form-select w-select" placeholder="Esti interesat de:">
-                    <option value="-1" disabled selected>Esti interesat de:</option>
+                    <option value="-1" [disabled]="true" [selected]="true">Ma intereseaza:</option>
                     <option value="Contabilitate SRL">Contabilitate SRL</option>
                     <option value="Salarizare si Resurse Umane">Salarizare si Resurse Umane</option>
                     <option value="Consultanta Fiscala">Consultanta Fiscala</option>
@@ -49,7 +49,7 @@
                   </select>
 
                   <input formControlName="phone" type="phone" class="form-input-text w-input" maxlength="256" name="phone" data-name="phone"
-                    placeholder="telefon" id="phone" required="">
+                    placeholder="Telefon" id="phone" required="">
                   <div *ngIf="f.phone.touched && f.phone.invalid" class="alert alert-danger">
                     <div *ngIf="f.phone.errors.required">Introduceti numarul</div>
                     <div *ngIf="f.phone.errors.pattern">Telefonul nu are formatul corect</div>

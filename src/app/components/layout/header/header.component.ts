@@ -6,20 +6,13 @@ import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  menu: boolean = false;
 
   constructor(private router: Router) { }
 
   ngOnInit(): void {
-    this.router.events.subscribe((evt) => {
-      
-      this.menu = false;
-
-    });
+    
   
   }
-  toggleMenu() {
-    this.menu = !this.menu;
-  }
+  
   
 }

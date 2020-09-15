@@ -14,15 +14,18 @@
   justify-content: space-around;
 
   img {
-    width: 270px;
-    height: auto;
+    height: 100px;
+    width: auto;
   }
 }
 
 .c-vertical-form {
   width: 50%;
 }
-
+.testimonials {
+  padding-bottom: 160px;
+    padding-top: 160px;
+}
 @media (max-width: 479px) {
   .portfolio-images {
     flex-direction: column;
@@ -35,6 +38,9 @@
 
   .c-vertical-form {
     width: 100%;
+  }
+  .testimonials {
+    padding-bottom: 0;
   }
 }
 

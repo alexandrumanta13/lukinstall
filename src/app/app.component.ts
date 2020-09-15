@@ -41,10 +41,6 @@ export class AppComponent {
       if (!(evt instanceof NavigationEnd)) {
         return;
       }
-      const hover = document.querySelector('.nav-dropdown-toggle');
-      const dropdown = document.querySelector('.dropdown-list');
-      hover.classList.remove('w--open');
-      dropdown.classList.remove('w--open');
       
       window.scrollTo(0, 0);
     });

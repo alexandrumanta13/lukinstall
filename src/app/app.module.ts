@@ -22,19 +22,12 @@ import { ConfidentialityComponent } from './pages/confidentiality/confidentialit
 import { CookiesComponent } from './pages/cookies/cookies.component';
 import { TermsComponent } from './pages/terms/terms.component';
 import { ThankYouComponent } from './components/thank-you/thank-you.component';
-import { PricesComponent } from './pages/prices/prices.component';
 import { WhatsappComponent } from './components/whatsapp/whatsapp.component';
 import { SliderComponent } from './pages/home/slider/slider.component';
 import { ServicesComponent } from './pages/home/services/services.component';
-import { ContabilitateSrlComponent } from './pages/contabilitate-srl/contabilitate-srl.component';
-import { SalarizareResurseUmaneComponent } from './pages/salarizare-resurse-umane/salarizare-resurse-umane.component';
-import { ServiciiConsultantaFiscalaContabilaComponent } from './pages/servicii-consultanta-fiscala-contabila/servicii-consultanta-fiscala-contabila.component';
-import { ServiciiContabilitatePfaIiIfComponent } from './pages/servicii-contabilitate-pfa-ii-if/servicii-contabilitate-pfa-ii-if.component';
-import { ServicesSidebarComponent } from './components/layout/services-sidebar/services-sidebar.component';
-import { QuoteSidebarComponent } from './components/layout/quote-sidebar/quote-sidebar.component';
-import { TestimonialsComponent } from './components/layout/testimonials/testimonials.component';
-import { QuickContactFormComponent } from './components/quick-contact-form/quick-contact-form.component';
+
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
   
 
@@ -53,19 +46,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CookiesComponent,
     TermsComponent,
     ThankYouComponent,
-    PricesComponent,
     WhatsappComponent,
     SliderComponent,
-    ServicesComponent,
-    ContabilitateSrlComponent,
-    SalarizareResurseUmaneComponent,
-    ServiciiConsultantaFiscalaContabilaComponent,
-    ServiciiContabilitatePfaIiIfComponent,
-    ServicesSidebarComponent,
-    QuoteSidebarComponent,
-    TestimonialsComponent,
-    QuickContactFormComponent,
-    
+    ServicesComponent
   ],
   imports: [
     BrowserModule,
@@ -77,9 +60,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
     
   ],
-  exports: [
-    QuickContactFormComponent
-  ],
+  exports: [],
   providers: [],
   bootstrap: [AppComponent]
 })
