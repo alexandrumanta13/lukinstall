@@ -27,8 +27,10 @@ import { SliderComponent } from './pages/home/slider/slider.component';
 import { ServicesComponent } from './pages/home/services/services.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { OldSiteSectionComponent } from './pages/home/old-site-section/old-site-section.component';
 
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CarouselModule } from 'ngx-owl-carousel-o';
   
 
 @NgModule({
@@ -48,7 +50,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ThankYouComponent,
     WhatsappComponent,
     SliderComponent,
-    ServicesComponent
+    ServicesComponent,
+    OldSiteSectionComponent
   ],
   imports: [
     BrowserModule,
@@ -57,7 +60,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HttpClientModule,
     ReactiveFormsModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
-
+    BrowserAnimationsModule,
+    CarouselModule 
     
   ],
   exports: [],

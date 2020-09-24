@@ -31,9 +31,11 @@
        
             ],
             "styles": [
+             
               "src/assets/css/bootstrap.css",
               "src/assets/css/style.css",
-              "src/assets/css/responsive.css"
+              "src/assets/css/responsive.css",
+              "src/styles.scss"
             ],
             "scripts": [
              "src/assets/js/jquery.js",

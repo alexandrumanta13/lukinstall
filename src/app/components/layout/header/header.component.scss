@@ -1,0 +1,14 @@
+.inner-container {
+    display: flex;
+    align-items: center;
+
+    .logo {
+        img {
+            width: 150px;
+        }
+    }
+
+    .nav-outer {
+        margin-left: auto;
+    }
+}

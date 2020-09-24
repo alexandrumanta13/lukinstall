@@ -22,10 +22,12 @@
 .c-vertical-form {
   width: 50%;
 }
+
 .testimonials {
   padding-bottom: 160px;
-    padding-top: 160px;
+  padding-top: 160px;
 }
+
 @media (max-width: 479px) {
   .portfolio-images {
     flex-direction: column;
@@ -39,9 +41,50 @@
   .c-vertical-form {
     width: 100%;
   }
+
   .testimonials {
     padding-bottom: 0;
   }
 }
 
 
+.featured-section .inner-container .featured-block {
+  img {
+    height: 60px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+}
+
+.security-section .icon {
+  img {
+    width: 23px;
+  }
+}
+
+.security-section .images-column .image:last-child {
+  position: absolute;
+  right: 15px;
+  bottom: -20px;
+}
+
+.call-to-action-section {
+  .btn-style-two {
+    &:hover {
+      border-color: #183964;
+    }
+
+    &:before, &:after {
+      border-color: #183964;
+    }
+    
+  }
+}
+
+
+.testimonial-block {
+  flex: 1;
+  padding: 0 20px;
+}
