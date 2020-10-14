@@ -15,13 +15,43 @@ import { GdprComponent } from './pages/gdpr/gdpr.component';
 import { ConfidentialityComponent } from './pages/confidentiality/confidentiality.component';
 import { CookiesComponent } from "./pages/cookies/cookies.component";
 import { TermsComponent } from "./pages/terms/terms.component";
+import { InstalatorSectorOneComponent } from './pages/instalator-sector-one/instalator-sector-one.component';
+import { InstalatorBucurestiComponent } from './pages/instalator-bucuresti/instalator-bucuresti.component';
+import { InstalatorSectorSixComponent } from './pages/instalator-sector-six/instalator-sector-six.component';
 
 const routes: Routes = [
   {
     path: '', component: HomeComponent,
     data: {
-      title: 'Expert conta',
-      description: 'Description Meta Tag Content',
+      title: 'instalator bucuresti si ilfov',
+      description: 'Lukinstall - instalator autorizat in Bucuresti si Ilfov',
+      ogUrl: 'your og url'
+    }
+  },
+
+  {
+    path: 'instalator-bucuresti', component: InstalatorBucurestiComponent,
+    data: {
+      title: 'instalator bucuresti si ilfov',
+      description: 'Instalator termic autorizat pentru instalatii termice in Bucuresti (toate sectoarele) si Ilfov. Intervenim rapid. Oferim garantie.',
+      ogUrl: 'your og url'
+    }
+  },
+
+  {
+    path: 'instalator-sector-1', component: InstalatorSectorOneComponent,
+    data: {
+      title: 'instalator sector 1',
+      description: 'Instalator sector 1. Servicii complete pentru toata gama de instalatii. Intervenim rapid cu instalatori autorizati pentru orice tip de lucrari in Bucuresti.',
+      ogUrl: 'your og url'
+    }
+  },
+
+  {
+    path: 'instalator-sector-6', component: InstalatorSectorSixComponent,
+    data: {
+      title: 'instalator sector 6',
+      description: 'nstalator sector 6. Servicii complete pentru toata gama de instalatii. Intervenim rapid cu instalatori autorizati pentru orice tip de lucrari in Bucuresti.',
       ogUrl: 'your og url'
     }
   },
@@ -30,7 +60,7 @@ const routes: Routes = [
     path: 'despre-noi', component: AboutComponent,
     data: {
       title: 'Despre noi',
-      description: 'Oferim servicii de contabilitate srl, financiare si de consultanta intr-o serie de industrii punand la dispozitie toata informatia necesara pentru a prospera.',
+      description: '',
       ogUrl: 'your og url'
     }
   },

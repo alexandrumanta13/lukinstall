@@ -31,6 +31,11 @@ import { OldSiteSectionComponent } from './pages/home/old-site-section/old-site-
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { InstalatorSectorOneComponent } from './pages/instalator-sector-one/instalator-sector-one.component';
+import { InstalatorSectorTwoComponent } from './pages/instalator-sector-two/instalator-sector-two.component';
+import { InstalatorBucurestiComponent } from './pages/instalator-bucuresti/instalator-bucuresti.component';
+import { FeatureSectionComponent } from './components/feature-section/feature-section.component';
+import { InstalatorSectorSixComponent } from './pages/instalator-sector-six/instalator-sector-six.component';
   
 
 @NgModule({
@@ -51,7 +56,12 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     WhatsappComponent,
     SliderComponent,
     ServicesComponent,
-    OldSiteSectionComponent
+    OldSiteSectionComponent,
+    InstalatorSectorOneComponent,
+    InstalatorSectorTwoComponent,
+    InstalatorBucurestiComponent,
+    FeatureSectionComponent,
+    InstalatorSectorSixComponent
   ],
   imports: [
     BrowserModule,
