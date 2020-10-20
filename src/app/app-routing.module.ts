@@ -18,6 +18,10 @@ import { TermsComponent } from "./pages/terms/terms.component";
 import { InstalatorSectorOneComponent } from './pages/instalator-sector-one/instalator-sector-one.component';
 import { InstalatorBucurestiComponent } from './pages/instalator-bucuresti/instalator-bucuresti.component';
 import { InstalatorSectorSixComponent } from './pages/instalator-sector-six/instalator-sector-six.component';
+import { InstalatorSectorFiveComponent } from './pages/instalator-sector-five/instalator-sector-five.component';
+import { InstalatorSectorFourComponent } from './pages/instalator-sector-four/instalator-sector-four.component';
+import { InstalatorSectorThreeComponent } from './pages/instalator-sector-three/instalator-sector-three.component';
+import { InstalatorSectorTwoComponent } from './pages/instalator-sector-two/instalator-sector-two.component';
 
 const routes: Routes = [
   {
@@ -48,10 +52,46 @@ const routes: Routes = [
   },
 
   {
+    path: 'instalator-sector-2', component: InstalatorSectorTwoComponent,
+    data: {
+      title: 'instalator sector 2',
+      description: 'Instalator sector 2. Servicii complete pentru toata gama de instalatii. Intervenim rapid cu instalatori autorizati pentru orice tip de lucrari in Bucuresti.',
+      ogUrl: 'your og url'
+    }
+  },
+
+  {
+    path: 'instalator-sector-3', component: InstalatorSectorThreeComponent,
+    data: {
+      title: 'instalator sector 3',
+      description: 'Instalator sector 3. Servicii complete pentru toata gama de instalatii. Intervenim rapid cu instalatori autorizati pentru orice tip de lucrari in Bucuresti.',
+      ogUrl: 'your og url'
+    }
+  },
+
+  {
+    path: 'instalator-sector-4', component: InstalatorSectorFourComponent,
+    data: {
+      title: 'instalator sector 4',
+      description: 'Instalator sector 4. Servicii complete pentru toata gama de instalatii. Intervenim rapid cu instalatori autorizati pentru orice tip de lucrari in Bucuresti.',
+      ogUrl: 'your og url'
+    }
+  },
+
+  {
+    path: 'instalator-sector-5', component: InstalatorSectorFiveComponent,
+    data: {
+      title: 'instalator sector 5',
+      description: 'Instalator sector 5. Servicii complete pentru toata gama de instalatii. Intervenim rapid cu instalatori autorizati pentru orice tip de lucrari in Bucuresti.',
+      ogUrl: 'your og url'
+    }
+  },
+
+  {
     path: 'instalator-sector-6', component: InstalatorSectorSixComponent,
     data: {
       title: 'instalator sector 6',
-      description: 'nstalator sector 6. Servicii complete pentru toata gama de instalatii. Intervenim rapid cu instalatori autorizati pentru orice tip de lucrari in Bucuresti.',
+      description: 'Instalator sector 6. Servicii complete pentru toata gama de instalatii. Intervenim rapid cu instalatori autorizati pentru orice tip de lucrari in Bucuresti.',
       ogUrl: 'your og url'
     }
   },

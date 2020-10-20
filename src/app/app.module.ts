@@ -36,6 +36,9 @@ import { InstalatorSectorTwoComponent } from './pages/instalator-sector-two/inst
 import { InstalatorBucurestiComponent } from './pages/instalator-bucuresti/instalator-bucuresti.component';
 import { FeatureSectionComponent } from './components/feature-section/feature-section.component';
 import { InstalatorSectorSixComponent } from './pages/instalator-sector-six/instalator-sector-six.component';
+import { InstalatorSectorFiveComponent } from './pages/instalator-sector-five/instalator-sector-five.component';
+import { InstalatorSectorFourComponent } from './pages/instalator-sector-four/instalator-sector-four.component';
+import { InstalatorSectorThreeComponent } from './pages/instalator-sector-three/instalator-sector-three.component';
   
 
 @NgModule({
@@ -61,7 +64,10 @@ import { InstalatorSectorSixComponent } from './pages/instalator-sector-six/inst
     InstalatorSectorTwoComponent,
     InstalatorBucurestiComponent,
     FeatureSectionComponent,
-    InstalatorSectorSixComponent
+    InstalatorSectorSixComponent,
+    InstalatorSectorFiveComponent,
+    InstalatorSectorFourComponent,
+    InstalatorSectorThreeComponent
   ],
   imports: [
     BrowserModule,
