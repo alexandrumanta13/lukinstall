@@ -23,7 +23,7 @@
   </div>
 
   <!-- Help Widget -->
-  <div class="sidebar-widget help-widget">
+  <div class="sidebar-widget help-widget" *ngIf="!router.url.includes('/instalatii-termice')">
     <div class="widget-inner">
       <h3>Cauti un instalator?</h3>
       <div class="title">Suna sau trimite email</div>
@@ -32,8 +32,32 @@
     </div>
   </div>
 
+  <!-- Help Widget -->
+  <div class="sidebar-widget help-widget" *ngIf="router.url.includes('/instalatii-termice')">
+    <div class="widget-inner">
+      <h3>Cauti un instalator?</h3>
+      <div class="title">Suna sau trimite email</div>
+      <a href="tel:+40743697295" class="phone">0743-697-295</a>
+      <a href="tel:+40732831826" class="phone">0732-831-826</a>
+      <a href="tel:+40771506190" class="phone">0771-506-190</a>
+    
+      <a href="mailto:office@lukinstall.ro" class="email">office@lukinstall.ro</a>
+    </div>
+  </div>
+
+  <div class="sidebar-widget timing-widget" *ngIf="router.url.includes('/instalatii-termice')">
+    <div class="widget-inner">
+      <h3>Program</h3>
+      <ul>
+        <li>Luni - Vineri <span>07:00 – 22:00</span></li>
+        <li>Sambata - Duminica <span>08:00 – 22:00</span></li>
+        
+      </ul>
+    </div>
+  </div>
+
   <!-- Timing Widget -->
-  <div class="sidebar-widget timing-widget schedule">
+  <div class="sidebar-widget timing-widget schedule" *ngIf="!router.url.includes('/instalatii-termice')">
     <div class="widget-inner">
       <h3>Luk Install asigura instalatori in Bucuresti
         acoperire in toate sectoarele si judetul Ilfov

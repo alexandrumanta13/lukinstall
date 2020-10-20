@@ -23,6 +23,8 @@ import { InstalatorSectorFourComponent } from './pages/instalator-sector-four/in
 import { InstalatorSectorThreeComponent } from './pages/instalator-sector-three/instalator-sector-three.component';
 import { InstalatorSectorTwoComponent } from './pages/instalator-sector-two/instalator-sector-two.component';
 import { InstalatorSanitarComponent } from './pages/instalator-sanitar/instalator-sanitar.component';
+import { InstalatiiTermiceComponent } from './pages/instalatii-termice/instalatii-termice.component';
+import { InstalatorNonStopComponent } from './pages/instalator-non-stop/instalator-non-stop.component';
 
 const routes: Routes = [
   {
@@ -44,10 +46,27 @@ const routes: Routes = [
   },
 
   {
+    path: 'instalatii-termice', component: InstalatiiTermiceComponent,
+    data: {
+      title: 'instalatii termice',
+      description: 'Instalator termic autorizat pentru instalatii termice in Bucuresti (toate sectoarele) si Ilfov. Intervenim rapid. Oferim garantie.',
+      ogUrl: 'your og url'
+    }
+  },
+
+  {
     path: 'instalator-sanitar', component: InstalatorSanitarComponent,
     data: {
       title: 'instalator sanitar',
       description: 'Instalator sanitar Bucurest si Ilfov. Servicii complete pentru toata gama de instalatii. Intervenim rapid cu instalatori autorizati. Oferim garantie.',
+      ogUrl: 'your og url'
+    }
+  },
+  {
+    path: 'instalator-non-stop', component: InstalatorNonStopComponent,
+    data: {
+      title: 'instalator non stop',
+      description: 'Cauti un instalator non stop in Bucuresti (toate sectoarele) si Ilfov? Intervenim in maxim 30 de minute. Oferim garantia lucrarii efectuate.',
       ogUrl: 'your og url'
     }
   },

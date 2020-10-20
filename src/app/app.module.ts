@@ -41,6 +41,8 @@ import { InstalatorSectorFourComponent } from './pages/instalator-sector-four/in
 import { InstalatorSectorThreeComponent } from './pages/instalator-sector-three/instalator-sector-three.component';
 import { InstalatorSanitarComponent } from './pages/instalator-sanitar/instalator-sanitar.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { InstalatiiTermiceComponent } from './pages/instalatii-termice/instalatii-termice.component';
+import { InstalatorNonStopComponent } from './pages/instalator-non-stop/instalator-non-stop.component';
   
 
 @NgModule({
@@ -71,7 +73,9 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     InstalatorSectorFourComponent,
     InstalatorSectorThreeComponent,
     InstalatorSanitarComponent,
-    SidebarComponent
+    SidebarComponent,
+    InstalatiiTermiceComponent,
+    InstalatorNonStopComponent
   ],
   imports: [
     BrowserModule,
