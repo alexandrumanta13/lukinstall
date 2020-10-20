@@ -22,6 +22,7 @@ import { InstalatorSectorFiveComponent } from './pages/instalator-sector-five/in
 import { InstalatorSectorFourComponent } from './pages/instalator-sector-four/instalator-sector-four.component';
 import { InstalatorSectorThreeComponent } from './pages/instalator-sector-three/instalator-sector-three.component';
 import { InstalatorSectorTwoComponent } from './pages/instalator-sector-two/instalator-sector-two.component';
+import { InstalatorSanitarComponent } from './pages/instalator-sanitar/instalator-sanitar.component';
 
 const routes: Routes = [
   {
@@ -38,6 +39,15 @@ const routes: Routes = [
     data: {
       title: 'instalator bucuresti si ilfov',
       description: 'Instalator termic autorizat pentru instalatii termice in Bucuresti (toate sectoarele) si Ilfov. Intervenim rapid. Oferim garantie.',
+      ogUrl: 'your og url'
+    }
+  },
+
+  {
+    path: 'instalator-sanitar', component: InstalatorSanitarComponent,
+    data: {
+      title: 'instalator sanitar',
+      description: 'Instalator sanitar Bucurest si Ilfov. Servicii complete pentru toata gama de instalatii. Intervenim rapid cu instalatori autorizati. Oferim garantie.',
       ogUrl: 'your og url'
     }
   },

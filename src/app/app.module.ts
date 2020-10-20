@@ -39,6 +39,8 @@ import { InstalatorSectorSixComponent } from './pages/instalator-sector-six/inst
 import { InstalatorSectorFiveComponent } from './pages/instalator-sector-five/instalator-sector-five.component';
 import { InstalatorSectorFourComponent } from './pages/instalator-sector-four/instalator-sector-four.component';
 import { InstalatorSectorThreeComponent } from './pages/instalator-sector-three/instalator-sector-three.component';
+import { InstalatorSanitarComponent } from './pages/instalator-sanitar/instalator-sanitar.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
   
 
 @NgModule({
@@ -67,7 +69,9 @@ import { InstalatorSectorThreeComponent } from './pages/instalator-sector-three/
     InstalatorSectorSixComponent,
     InstalatorSectorFiveComponent,
     InstalatorSectorFourComponent,
-    InstalatorSectorThreeComponent
+    InstalatorSectorThreeComponent,
+    InstalatorSanitarComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
