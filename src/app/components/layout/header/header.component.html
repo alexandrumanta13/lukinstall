@@ -14,7 +14,7 @@
 
         <div class="nav-outer clearfix">
           <!--Mobile Navigation Toggler-->
-          <div class="mobile-nav-toggler"><span class="icon flaticon-menu"></span></div>
+          <div class="mobile-nav-toggler" (click)="mobileToggler()"><span class="icon flaticon-menu"></span></div>
           <!-- Main Menu -->
           <nav class="main-menu navbar-expand-md">
             <div class="navbar-header">
@@ -122,7 +122,7 @@
   <!-- Mobile Menu  -->
   <div class="mobile-menu">
     <div class="menu-backdrop"></div>
-    <div class="close-btn"><span class="icon flaticon-multiply"></span></div>
+    <div class="close-btn" (click)="mobileToggler()"><span class="icon flaticon-multiply"></span></div>
 
     <nav class="menu-box">
       <div class="nav-logo"><a href="index.html"><img src="https://via.placeholder.com/220x115" alt="" title=""></a>

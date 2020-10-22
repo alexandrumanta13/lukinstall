@@ -10,8 +10,13 @@ export class HeaderComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit(): void {
-    window.addEventListener('scroll', this.scrollEvent, true);
+    
   }
+
+  mobileToggler() {
+    (<HTMLElement>document.querySelector('body')).classList.toggle('mobile-menu-visible');
+  }
+  
   iScrollPos;
   iCurScrollPos;
   scrollEvent = () => {
