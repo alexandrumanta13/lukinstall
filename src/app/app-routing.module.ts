@@ -25,6 +25,7 @@ import { InstalatorSectorTwoComponent } from './pages/instalator-sector-two/inst
 import { InstalatorSanitarComponent } from './pages/instalator-sanitar/instalator-sanitar.component';
 import { InstalatiiTermiceComponent } from './pages/instalatii-termice/instalatii-termice.component';
 import { InstalatorNonStopComponent } from './pages/instalator-non-stop/instalator-non-stop.component';
+import { MontajCentraleTermiceComponent } from './pages/montaj-centrale-termice/montaj-centrale-termice.component';
 
 const routes: Routes = [
   {
@@ -56,6 +57,15 @@ const routes: Routes = [
 
   {
     path: 'instalator-sanitar', component: InstalatorSanitarComponent,
+    data: {
+      title: 'instalator sanitar',
+      description: 'Instalator sanitar Bucurest si Ilfov. Servicii complete pentru toata gama de instalatii. Intervenim rapid cu instalatori autorizati. Oferim garantie.',
+      ogUrl: 'your og url'
+    }
+  },
+
+  {
+    path: 'montaj-centrale-termice', component: MontajCentraleTermiceComponent,
     data: {
       title: 'instalator sanitar',
       description: 'Instalator sanitar Bucurest si Ilfov. Servicii complete pentru toata gama de instalatii. Intervenim rapid cu instalatori autorizati. Oferim garantie.',

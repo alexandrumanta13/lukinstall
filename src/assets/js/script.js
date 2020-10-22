@@ -103,6 +103,7 @@
 		var iScrollPos = 0;
 
 		$(window).scroll(function () {
+			
 		    var iCurScrollPos = $(this).scrollTop();
 		    if (iCurScrollPos > iScrollPos) {
 		        $('.main-header .sticky-header').css({"position": "fixed", "width": "100%", "top": "-100px"});

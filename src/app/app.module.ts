@@ -43,6 +43,7 @@ import { InstalatorSanitarComponent } from './pages/instalator-sanitar/instalato
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { InstalatiiTermiceComponent } from './pages/instalatii-termice/instalatii-termice.component';
 import { InstalatorNonStopComponent } from './pages/instalator-non-stop/instalator-non-stop.component';
+import { MontajCentraleTermiceComponent } from './pages/montaj-centrale-termice/montaj-centrale-termice.component';
   
 
 @NgModule({
@@ -75,7 +76,8 @@ import { InstalatorNonStopComponent } from './pages/instalator-non-stop/instalat
     InstalatorSanitarComponent,
     SidebarComponent,
     InstalatiiTermiceComponent,
-    InstalatorNonStopComponent
+    InstalatorNonStopComponent,
+    MontajCentraleTermiceComponent
   ],
   imports: [
     BrowserModule,
