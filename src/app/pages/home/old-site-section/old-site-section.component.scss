@@ -5,6 +5,15 @@
   background-repeat: repeat;
   background-position: center;
   display: flex;
+  @media (max-width: 479px) {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 16px;
+  }
+
+  hr {
+    border: none;
+  }
 }
 
 
@@ -44,6 +53,9 @@
 
 .two-third.mcb-wrap {
   width: 66.666%;
+  @media (max-width: 479px) {
+    width: 100%;
+  }
 }
 
 h1,

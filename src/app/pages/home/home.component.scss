@@ -79,6 +79,11 @@
 .testimonial-block {
   flex: 1;
   padding: 0 20px;
+
+  @media (max-width: 479px) {
+    flex: unset;
+    width: 100%;
+  }
 }
 
 .video-gallery iframe {

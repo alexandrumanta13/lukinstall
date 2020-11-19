@@ -12,28 +12,34 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   customOptions: OwlOptions = {
-    loop: true,
-    mouseDrag: false,
-    touchDrag: false,
-    pullDrag: false,
-    dots: true,
-    navSpeed: 700,
-    navText: ['Previous', 'Next'],
-    responsive: {
-      0: {
-        items: 1 
-      },
-      400: {
-        items: 2
-      },
-      740: {
-        items: 3
-      },
-      940: {
-        items: 4
-      }
-    },
-    nav: true
+    loop:true,
+			margin:88,
+			nav:true,
+			smartSpeed: 500,
+		
+			navText: [ '<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>' ],
+			responsive:{
+				0:{
+					items:1,
+					margin:30
+				},
+				480:{
+					items:1,
+					margin:30
+				},
+				600:{
+					items:1,
+					margin:30
+				},
+				800:{
+					items:2,
+					margin:30
+				},
+				1024:{
+					items:2,
+					margin:30
+				}
+			}
   }
 
   ngOnInit(): void {

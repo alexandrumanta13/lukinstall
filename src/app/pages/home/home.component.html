@@ -325,8 +325,8 @@
             </div>
             
             <div class="inner-container">
-				<div class="testimonial-carousel">
-                    <owl-carousel-o [options]="customOptions">
+			
+                    <owl-carousel-o [options]="customOptions" class="testimonial-carousel">
                         <ng-template carouselSlide>
                             <!-- Testimonial Block -->
                             <div class="testimonial-block">
@@ -351,6 +351,12 @@
                                     </div>
                                 </div>
                             </div>
+                            
+
+                            
+                        </ng-template>
+                        <ng-template carouselSlide>
+                          
                                 <!-- Testimonial Block -->
                             <div class="testimonial-block">
                                 <div class="inner-box">
@@ -373,10 +379,12 @@
                                     </div>
                                 </div>
                             </div>
+
+                            
                         </ng-template>
                        
                     </owl-carousel-o>
-				</div>
+				
 			</div>
 		</div>
 	</section>
