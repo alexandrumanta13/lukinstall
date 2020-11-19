@@ -26,6 +26,8 @@ import { InstalatorSanitarComponent } from './pages/instalator-sanitar/instalato
 import { InstalatiiTermiceComponent } from './pages/instalatii-termice/instalatii-termice.component';
 import { InstalatorNonStopComponent } from './pages/instalator-non-stop/instalator-non-stop.component';
 import { MontajCentraleTermiceComponent } from './pages/montaj-centrale-termice/montaj-centrale-termice.component';
+import { DesfundareCanalizareComponent } from './pages/desfundare-canalizare/desfundare-canalizare.component';
+import { DesfundareWcComponent } from './pages/desfundare-wc/desfundare-wc.component';
 
 const routes: Routes = [
   {
@@ -69,6 +71,22 @@ const routes: Routes = [
     data: {
       title: 'instalator sanitar',
       description: 'Instalator sanitar Bucurest si Ilfov. Servicii complete pentru toata gama de instalatii. Intervenim rapid cu instalatori autorizati. Oferim garantie.',
+      ogUrl: 'your og url'
+    }
+  },
+  {
+    path: 'desfundare-canalizare', component: DesfundareCanalizareComponent,
+    data: {
+      title: 'desfundare canalizare',
+      description: 'Instalator autorizat pentru desfundare canalizare in Bucuresti (toate sectoarele) si Ilfov. Intervenim rapid. Oferim garantie.',
+      ogUrl: 'your og url'
+    }
+  },
+  {
+    path: 'desfundare-wc', component: DesfundareWcComponent,
+    data: {
+      title: 'desfundare wc',
+      description: 'Instalator autorizat pentru desfundareWC in Bucuresti (toate sectoarele) si Ilfov. Intervenim rapid. Oferim garantie.',
       ogUrl: 'your og url'
     }
   },

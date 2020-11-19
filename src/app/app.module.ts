@@ -44,6 +44,8 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { InstalatiiTermiceComponent } from './pages/instalatii-termice/instalatii-termice.component';
 import { InstalatorNonStopComponent } from './pages/instalator-non-stop/instalator-non-stop.component';
 import { MontajCentraleTermiceComponent } from './pages/montaj-centrale-termice/montaj-centrale-termice.component';
+import { DesfundareCanalizareComponent } from './pages/desfundare-canalizare/desfundare-canalizare.component';
+import { DesfundareWcComponent } from './pages/desfundare-wc/desfundare-wc.component';
   
 
 @NgModule({
@@ -77,7 +79,9 @@ import { MontajCentraleTermiceComponent } from './pages/montaj-centrale-termice/
     SidebarComponent,
     InstalatiiTermiceComponent,
     InstalatorNonStopComponent,
-    MontajCentraleTermiceComponent
+    MontajCentraleTermiceComponent,
+    DesfundareCanalizareComponent,
+    DesfundareWcComponent
   ],
   imports: [
     BrowserModule,
