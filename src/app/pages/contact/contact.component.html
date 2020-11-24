@@ -1,76 +1,125 @@
-<div class="section is-hero has-gradient position-relative overflow-hidden is-subpage">
-  <div class="container position-relative">
-    <div class="col block-centered text-align-center lg-7 md-12">
-      <h1>Contact</h1>
-    </div>
-  </div><img src="/assets/images/header2.svg" alt="" class="header-image style3">
-</div>
+<!-- Page Title -->
+<section class="page-title" style="background-image: url(https://via.placeholder.com/1920x975)">
+  <div class="auto-container">
+    <h1>get in touch</h1>
+    <ul class="page-breadcrumb">
+      <li><a href="index.html">home</a></li>
+      <li>Contact us</li>
+    </ul>
+  </div>
+</section>
+<!-- End Page Title -->
 
 
+<!-- Fluid Section Two -->
+<section class="fluid-section-two contact-page-section">
+  <div class="container clearfix">
 
-<div class="section has-bg-accent">
-  <div class="container is-narrow">
-    <div class="col lg-12">
-      <div class="c-cta1 style2">
-        <div class="md-margin-bottom cta-text">
-          <div class="w-form">
-            <form id="email-form" name="email-form" data-name="Email Form" [formGroup]="formContact" (ngSubmit)="submit()">
-              <div class="container container-nested">
-                <div class="col lg-6 sm-12">
-                  <div class="size-h2 max-width-650px margin-bottom">Hai sa vorbim!<br></div>
-                  <div>
-                    <p>
-                      <strong>Adresa:</strong> Strada Europa, Nr1, Bloc A9, Scara 1, Apartament 302, Complex Cosmopolis,
-                      Stefanestii de
-                      Jos.
-                    </p>
+
+    <div class="row">
+      <!--Form Column-->
+      <div class="form-column col-lg-6 col-md-12 col-sm-12">
+        <div class="inner-column">
+          <!-- Sec Title -->
+          <div class="sec-title">
+            <div class="icon">
+              <img src="assets/images/icons/separater.png" alt="" />
+            </div>
+            <h2>Send Message</h2>
+            <div class="text">Have a query? Submit to us here.</div>
+          </div>
+          <div class="content">
+            <!-- Contact Form -->
+            <div class="contact-form">
+              <form method="post" action="contact.html">
+                <div class="row clearfix">
+
+                  <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                    <input type="text" name="username" value="" placeholder="First Name" required>
                   </div>
-                  <div class="contact-details">
-                    <a href="tel:+40724374126"><img src="/assets/images/phone--1.svg" alt=""> 0724374126</a> <br>
-                    <a href="tel:+40739913168"><img src="/assets/images/phone--2.svg" alt="">0739913168</a><br>
-                    <a href="mailto:birou@lukinstall.ro"><img src="/assets/images/email.svg" alt="">birou@lukinstall.ro</a><br>
+
+                  <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                    <input type="text" name="lastname" value="" placeholder="Last Name" required>
                   </div>
+
+                  <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                    <input type="email" name="email" value="" placeholder="Your Email" required>
+                  </div>
+
+                  <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                    <input type="text" name="phone" value="" placeholder="Phone No." required>
+                  </div>
+
+                  <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                    <textarea name="message" placeholder="Question or Request"></textarea>
+                  </div>
+
+                  <div class="form-group btn-column col-md-12 col-sm-12 col-xs-12">
+                    <button type="submit" class="theme-btn submit-btn"><span class="txt">send message <i
+                          class="fa fa-angle-right"></i></span></button>
+                  </div>
+
                 </div>
-                <div class="col lg-1"></div>
-                <div class="col no-margin-bottom lg-5 sm-12">
-                  <input formControlName="name" type="text" class="form-input-text w-input" maxlength="256" name="name" data-name="name"
-                    placeholder="Nume" id="name">
-                  <div *ngIf="f.name.touched && f.name.invalid" class="alert alert-danger">
-                    <div *ngIf="f.name.errors.required">Introduceti numele</div>
-                    <div *ngIf="f.name.errors.minlength">Numele trebuie sa contina cel putin 3 litere</div>
-                  </div>
 
-                  <select name="categories" id="categories" formControlName="categories" [(ngModel)]="categories" class="form-select w-select" placeholder="Esti interesat de:">
-                    <option value="-1" [disabled]="true" [selected]="true">Ma intereseaza:</option>
-                    <option value="Contabilitate SRL">Contabilitate SRL</option>
-                    <option value="Salarizare si Resurse Umane">Salarizare si Resurse Umane</option>
-                    <option value="Consultanta Fiscala">Consultanta Fiscala</option>
-                    <option value="Contabilitate PFA, II, IF">Contabilitate PFA, II, IF</option>
-                  </select>
+              </form>
+            </div>
 
-                  <input formControlName="phone" type="phone" class="form-input-text w-input" maxlength="256" name="phone" data-name="phone"
-                    placeholder="Telefon" id="phone" required="">
-                  <div *ngIf="f.phone.touched && f.phone.invalid" class="alert alert-danger">
-                    <div *ngIf="f.phone.errors.required">Introduceti numarul</div>
-                    <div *ngIf="f.phone.errors.pattern">Telefonul nu are formatul corect</div>
-                  </div>
-
-                  <input formControlName="email" type="email" class="form-input-text w-input" maxlength="256" name="email" data-name="email"
-                    placeholder="Email" id="email" required="">
-                  <div *ngIf="f.email.touched && f.email.invalid" class="alert alert-danger">
-                    <div *ngIf="f.email.errors.required">Introduceti emailul</div>
-                    <div *ngIf="f.email.errors.minlength">Formatul nu este corect</div>
-                    <div *ngIf="f.email.errors.required">Formatul nu este corect</div>
-                  </div>
-
-                  <button [disabled]="!formContact.valid" type="submit" class="button-primary w-button">Trimite</button>
-                </div>
-              </div>
-            </form>
-           
           </div>
         </div>
       </div>
+      <div class="content-column col-lg-6 col-md-12 col-sm-12">
+        <div class="inner-column">
+          <h4>Have a question or <br> Need to set up your <br> security system?</h4>
+          <div class="text">Give us a call and our experienced and friendly staff would be happy to assist you.</div>
+          <ul class="info-list">
+            <li><span class="icon flaticon-call-3"></span><a href="tel:1-700-231-0025">1-700-231-0025</a></li>
+            <li><span class="icon flaticon-email-5"></span><a href="mailto:support@teknik.net">support@teknik.net</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
+
   </div>
-</div>
+</section>
+<!-- End Fluid Section One -->
+
+<!-- Clients Section -->
+<section class="clients-section">
+  <div class="auto-container">
+
+    <div class="sponsors-outer">
+      <!--Sponsors Carousel-->
+      <ul class="sponsors-carousel owl-carousel owl-theme">
+        <li class="slide-item">
+          <figure class="image-box"><a href="#"><img src="https://via.placeholder.com/240x115" alt=""></a></figure>
+        </li>
+        <li class="slide-item">
+          <figure class="image-box"><a href="#"><img src="https://via.placeholder.com/240x115" alt=""></a></figure>
+        </li>
+        <li class="slide-item">
+          <figure class="image-box"><a href="#"><img src="https://via.placeholder.com/240x115" alt=""></a></figure>
+        </li>
+        <li class="slide-item">
+          <figure class="image-box"><a href="#"><img src="https://via.placeholder.com/240x115" alt=""></a></figure>
+        </li>
+        <li class="slide-item">
+          <figure class="image-box"><a href="#"><img src="https://via.placeholder.com/240x115" alt=""></a></figure>
+        </li>
+        <li class="slide-item">
+          <figure class="image-box"><a href="#"><img src="https://via.placeholder.com/240x115" alt=""></a></figure>
+        </li>
+        <li class="slide-item">
+          <figure class="image-box"><a href="#"><img src="https://via.placeholder.com/240x115" alt=""></a></figure>
+        </li>
+        <li class="slide-item">
+          <figure class="image-box"><a href="#"><img src="https://via.placeholder.com/240x115" alt=""></a></figure>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+<!-- End Clients Section -->
+
+
