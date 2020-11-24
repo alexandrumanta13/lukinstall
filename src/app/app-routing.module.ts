@@ -28,6 +28,7 @@ import { InstalatorNonStopComponent } from './pages/instalator-non-stop/instalat
 import { MontajCentraleTermiceComponent } from './pages/montaj-centrale-termice/montaj-centrale-termice.component';
 import { DesfundareCanalizareComponent } from './pages/desfundare-canalizare/desfundare-canalizare.component';
 import { DesfundareWcComponent } from './pages/desfundare-wc/desfundare-wc.component';
+import { LucrariComponent } from './pages/lucrari/lucrari.component';
 
 const routes: Routes = [
   {
@@ -192,6 +193,14 @@ const routes: Routes = [
     data: {
       title: 'Termeni si conditii',
       description: '',
+      ogUrl: 'your og url'
+    }
+  },
+  {
+    path: 'lucrari', component: LucrariComponent,
+    data: {
+      title: 'lucrari-instalator-bucuresti',
+      description: 'Esti curios ce am lucrat pana acum? Vezi in galeria noastra foto o parte din portofoliul nostru de lucrari instalator Bucuresti.',
       ogUrl: 'your og url'
     }
   },

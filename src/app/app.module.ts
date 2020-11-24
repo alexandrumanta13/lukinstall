@@ -46,7 +46,9 @@ import { InstalatorNonStopComponent } from './pages/instalator-non-stop/instalat
 import { MontajCentraleTermiceComponent } from './pages/montaj-centrale-termice/montaj-centrale-termice.component';
 import { DesfundareCanalizareComponent } from './pages/desfundare-canalizare/desfundare-canalizare.component';
 import { DesfundareWcComponent } from './pages/desfundare-wc/desfundare-wc.component';
-  
+import { LucrariComponent } from './pages/lucrari/lucrari.component';
+
+import {NgxGalleryModule} from '@kolkov/ngx-gallery';
 
 @NgModule({
   declarations: [
@@ -81,7 +83,8 @@ import { DesfundareWcComponent } from './pages/desfundare-wc/desfundare-wc.compo
     InstalatorNonStopComponent,
     MontajCentraleTermiceComponent,
     DesfundareCanalizareComponent,
-    DesfundareWcComponent
+    DesfundareWcComponent,
+    LucrariComponent
   ],
   imports: [
     BrowserModule,
@@ -91,8 +94,8 @@ import { DesfundareWcComponent } from './pages/desfundare-wc/desfundare-wc.compo
     ReactiveFormsModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     BrowserAnimationsModule,
-    CarouselModule 
-    
+    CarouselModule,
+    NgxGalleryModule
   ],
   exports: [],
   providers: [],

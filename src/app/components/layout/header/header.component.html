@@ -1,14 +1,14 @@
 <!-- Main Header-->
 <header class="main-header header-style-one">
 
- 
+
   <!--Header-Upper-->
   <div class="header-upper">
     <div class="auto-container">
       <div class="inner-container clearfix">
 
         <div class="pull-left logo-box">
-          <div class="logo"><a href="/"><img src="/assets/images/logo_mob.png" alt="" title=""></a>
+          <div class="logo"><a routerLink="/"><img src="/assets/images/logo_mob.png" alt="" title=""></a>
           </div>
         </div>
 
@@ -40,20 +40,22 @@
                     <li><a routerLink="/instalator-sector-6">Instalator Sector 6</a></li>
                   </ul>
                 </li>
-                <li class="dropdown"><a href="/instalator-sanitar">Instalator Sanitar</a>
+                <li class="dropdown"><a routerLink="/instalator-sanitar">Instalator Sanitar</a>
                   <ul>
-                    <li><a href="/desfundare-canalizare">Desfundare Canalizare</a></li>
-                    <li><a href="/desfundare-wc">Desfundare WC</a></li>
+                    <li><a routerLink="/desfundare-canalizare">Desfundare Canalizare</a></li>
+                    <li><a routerLink="/desfundare-wc">Desfundare WC</a></li>
                   </ul>
                 </li>
-                
-                <li class="dropdown"><a href="/instalatii-termice">Instalatii Termice</a>
+
+                <li class="dropdown"><a routerLink="/instalatii-termice">Instalatii Termice</a>
                   <ul>
-                    <li><a href="/montaj-centrale-termice">Montaj Centrale Termice</a></li>
+                    <li><a routerLink="/montaj-centrale-termice">Montaj Centrale Termice</a></li>
                   </ul>
                 </li>
-                <li><a href="/instalator-non-stop">Instalator Non Stop</a></li>
-                <li><a href="/contact">Contact</a></li>
+                <li><a routerLink="/instalator-non-stop">Instalator Non Stop</a></li>
+                <li><a routerLink="/lucrari">Lucrari</a></li>
+
+                <li><a routerLink="/contact">Contact</a></li>
               </ul>
             </div>
           </nav>
@@ -61,9 +63,9 @@
           <!-- Main Menu End-->
           <div class="outer-box clearfix">
 
-           
 
-          
+
+
           </div>
         </div>
 
@@ -78,7 +80,7 @@
     <div class="auto-container clearfix">
       <!--Logo-->
       <div class="logo pull-left">
-        <a href="/" title=""><img src="/assets/images/logo_mob.png" alt="" title=""></a>
+        <a routerLink="/" title=""><img src="/assets/images/logo_mob.png" alt="" title=""></a>
       </div>
       <!--Right Col-->
       <div class="pull-right">
@@ -97,20 +99,21 @@
                   <li><a routerLink="/instalator-sector-6">Instalator Sector 6</a></li>
                 </ul>
               </li>
-              <li class="dropdown"><a href="/instalator-sanitar">Instalator Sanitar</a>
+              <li class="dropdown"><a routerLink="/instalator-sanitar">Instalator Sanitar</a>
                 <ul>
-                  <li><a href="/desfundare-canalizare">Desfundare Canalizare</a></li>
-                  <li><a href="/desfundare-wc">Desfundare WC</a></li>
+                  <li><a routerLink="/desfundare-canalizare">Desfundare Canalizare</a></li>
+                  <li><a routerLink="/desfundare-wc">Desfundare WC</a></li>
                 </ul>
               </li>
-              
-              <li class="dropdown"><a href="/instalatii-termice">Instalatii Termice</a>
+
+              <li class="dropdown"><a routerLink="/instalatii-termice">Instalatii Termice</a>
                 <ul>
-                  <li><a href="/montaj-centrale-termice">Montaj Centrale Termice</a></li>
+                  <li><a routerLink="/montaj-centrale-termice">Montaj Centrale Termice</a></li>
                 </ul>
               </li>
-              <li><a href="/instalator-non-stop">Instalator Non Stop</a></li>
-              <li><a href="/contact">Contact</a></li>
+              <li><a routerLink="/instalator-non-stop">Instalator Non Stop</a></li>
+              <li><a routerLink="/lucrari">Lucrari</a></li>
+              <li><a routerLink="/contact">Contact</a></li>
             </ul>
           </div>
         </nav><!-- Main Menu End-->
@@ -125,38 +128,51 @@
     <div class="close-btn" (click)="mobileToggler()"><span class="icon flaticon-multiply"></span></div>
 
     <nav class="menu-box">
-      <div class="nav-logo"><a href="/"><img src="/assets/images/logo_mob.png" alt="" title=""></a>
+      <div class="nav-logo"><a routerLink="/"><img src="/assets/images/logo_mob.png" alt="" title=""></a>
       </div>
       <div class="menu-outer">
-        <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent" >
+        <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
           <ul class="navigation clearfix">
             <li class="current"><a (click)="toggleSubmenu('/')" routerLink="/">Acasa</a></li>
-            <li class="dropdown"><a (click)="toggleSubmenu('/instalator-bucuresti')" routerLink="/instalator-bucuresti">Instalator Bucuresti</a>
+            <li class="dropdown"><a (click)="toggleSubmenu('/instalator-bucuresti')"
+                routerLink="/instalator-bucuresti">Instalator Bucuresti</a>
               <ul class="submenu">
-                <li><a (click)="toggleSubmenu('/instalator-sector-1')" routerLink="/instalator-sector-1">Instalator Sector 1</a></li>
-                <li><a (click)="toggleSubmenu('/instalator-sector-2')" routerLink="/instalator-sector-2">Instalator Sector 2</a></li>
-                <li><a (click)="toggleSubmenu('/instalator-sector-3')" routerLink="/instalator-sector-3">Instalator Sector 3</a></li>
-                <li><a (click)="toggleSubmenu('/instalator-sector-4')" routerLink="/instalator-sector-4">Instalator Sector 4</a></li>
-                <li><a (click)="toggleSubmenu('/instalator-sector-5')" routerLink="/instalator-sector-5">Instalator Sector 5</a></li>
-                <li><a (click)="toggleSubmenu('/instalator-sector-6')" routerLink="/instalator-sector-6">Instalator Sector 6</a></li>
+                <li><a (click)="toggleSubmenu('/instalator-sector-1')" routerLink="/instalator-sector-1">Instalator
+                    Sector 1</a></li>
+                <li><a (click)="toggleSubmenu('/instalator-sector-2')" routerLink="/instalator-sector-2">Instalator
+                    Sector 2</a></li>
+                <li><a (click)="toggleSubmenu('/instalator-sector-3')" routerLink="/instalator-sector-3">Instalator
+                    Sector 3</a></li>
+                <li><a (click)="toggleSubmenu('/instalator-sector-4')" routerLink="/instalator-sector-4">Instalator
+                    Sector 4</a></li>
+                <li><a (click)="toggleSubmenu('/instalator-sector-5')" routerLink="/instalator-sector-5">Instalator
+                    Sector 5</a></li>
+                <li><a (click)="toggleSubmenu('/instalator-sector-6')" routerLink="/instalator-sector-6">Instalator
+                    Sector 6</a></li>
               </ul>
               <div class="dropdown-btn"><span class="fa fa-angle-down"></span></div>
             </li>
-            <li class="dropdown"><a (click)="toggleSubmenu('/instalator-sanitar')" routerLink="/instalator-sanitar">Instalator Sanitar</a>
+            <li class="dropdown"><a (click)="toggleSubmenu('/instalator-sanitar')"
+                routerLink="/instalator-sanitar">Instalator Sanitar</a>
               <ul class="submenu">
-                <li><a (click)="toggleSubmenu('/desfundare-canalizare')" routerLink="/desfundare-canalizare">Desfundare Canalizare</a></li>
+                <li><a (click)="toggleSubmenu('/desfundare-canalizare')" routerLink="/desfundare-canalizare">Desfundare
+                    Canalizare</a></li>
                 <li><a (click)="toggleSubmenu('/desfundare-wc')" routerLink="/desfundare-wc">Desfundare WC</a></li>
               </ul>
               <div class="dropdown-btn"><span class="fa fa-angle-down"></span></div>
             </li>
-            
-            <li class="dropdown"><a (click)="toggleSubmenu('/instalatii-termice')" routerLink="/instalatii-termice">Instalatii Termice</a>
+
+            <li class="dropdown"><a (click)="toggleSubmenu('/instalatii-termice')"
+                routerLink="/instalatii-termice">Instalatii Termice</a>
               <ul class="submenu">
-                <li><a (click)="toggleSubmenu('/montaj-centrale-termice')" routerLink="/montaj-centrale-termice">Montaj Centrale Termice</a></li>
+                <li><a (click)="toggleSubmenu('/montaj-centrale-termice')" routerLink="/montaj-centrale-termice">Montaj
+                    Centrale Termice</a></li>
               </ul>
               <div class="dropdown-btn"><span class="fa fa-angle-down"></span></div>
             </li>
-            <li><a (click)="toggleSubmenu('/instalator-non-stop')" routerLink="/instalator-non-stop">Instalator Non Stop</a></li>
+            <li><a (click)="toggleSubmenu('/instalator-non-stop')" routerLink="/instalator-non-stop">Instalator Non
+                Stop</a></li>
+            <li><a (click)="toggleSubmenu('/lucrari')" routerLink="/lucrari">Lucrari</a></li>
             <li><a (click)="toggleSubmenu('/contact')" routerLink="/contact">Contact</a></li>
           </ul>
         </div>
