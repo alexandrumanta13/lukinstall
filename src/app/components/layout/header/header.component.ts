@@ -12,14 +12,13 @@ export class HeaderComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit(): void { 
-    // if( window.innerWidth <= 800 ) {
-    //   console.log(this.detectMob)
-    //   this.toggleSubmenu();
-    // }
-    $('.mobile-menu li.dropdown .dropdown-btn').on('click', function () {
-      $(this).toggleClass('open');
-      $(this).prev('ul').slideToggle(500);
-    });
+    if( window.innerWidth <= 800 ) {
+      $('.mobile-menu li.dropdown .dropdown-btn').on('click', function () {
+        $(this).toggleClass('open');
+        $(this).prev('ul').slideToggle(500);
+      });
+    }
+   
   }
 
   mobileToggler() {

@@ -17,8 +17,8 @@ export class LucrariComponent implements OnInit {
   ngOnInit() {
     this.galleryOptions = [
       {
-        width: '100%',
-        height: '600px',
+        width: '70%',
+        height: '800px',
         thumbnailsColumns: 4,
         arrowPrevIcon: 'fa fa-chevron-left',
         arrowNextIcon: 'fa fa-chevron-right',

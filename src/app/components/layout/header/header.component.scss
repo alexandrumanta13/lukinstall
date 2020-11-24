@@ -22,3 +22,7 @@
 .main-menu .navigation > li > a {
     font-size: 16px;
 }
+
+.sticky-header #navbarSupportedContent:first-child {
+    //display: none !important;
+}
