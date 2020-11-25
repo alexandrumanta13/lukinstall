@@ -410,9 +410,9 @@
 	// Sponsors Carousel
 	if ($('.sponsors-carousel').length) {
 		$('.sponsors-carousel').owlCarousel({
-			loop:true,
+			loop:false,
 			margin:30,
-			nav:true,
+			nav:false,
 			smartSpeed: 500,
 			autoplay: 4000,
 			navText: [ '<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>' ],
@@ -424,13 +424,13 @@
 					items:2
 				},
 				600:{
-					items:3
+					items:2
 				},
 				800:{
-					items:4
+					items:2
 				},
 				1024:{
-					items:5
+					items:2
 				}
 			}
 		});    		

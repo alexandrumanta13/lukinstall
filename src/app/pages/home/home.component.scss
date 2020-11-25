@@ -86,8 +86,12 @@
   }
 }
 
+.video-gallery {
+  height: 480px;
+}
+
 .video-gallery iframe {
-  position: absolute;
+  //position: absolute;
   z-index: 2;
   width: 100%;
   height: 100%;
@@ -95,4 +99,12 @@
 
 .video-gallery .overlay-box {
   z-index: 3;
+}
+
+.aic .row {
+  align-items: center;
+}
+
+.call-to-action-section .title-column .text a span {
+  color: #fff;
 }

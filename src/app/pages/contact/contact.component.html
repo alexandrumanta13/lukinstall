@@ -1,10 +1,10 @@
 <!-- Page Title -->
-<section class="page-title" style="background-image: url(https://via.placeholder.com/1920x975)">
+<section class="page-title" style="background-image: url(/assets/images/saab-trusted-plumber.jpg); background-size: cover;">
   <div class="auto-container">
-    <h1>get in touch</h1>
+    <h1>Contact</h1>
     <ul class="page-breadcrumb">
-      <li><a href="index.html">home</a></li>
-      <li>Contact us</li>
+      <li><a href="/">Acasa</a></li>
+      <li>Contact</li>
     </ul>
   </div>
 </section>
@@ -23,39 +23,50 @@
           <!-- Sec Title -->
           <div class="sec-title">
             <div class="icon">
-              <img src="assets/images/icons/separater.png" alt="" />
+              <img src="/assets/images/icons/cog.svg" alt="" />
             </div>
-            <h2>Send Message</h2>
-            <div class="text">Have a query? Submit to us here.</div>
+            <h2>Trimite-ne un mesaj</h2>
+            <div class="text">Sau cere o oferta</div>
           </div>
           <div class="content">
             <!-- Contact Form -->
             <div class="contact-form">
-              <form method="post" action="contact.html">
+              <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
                 <div class="row clearfix">
 
-                  <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                    <input type="text" name="username" value="" placeholder="First Name" required>
+                  <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                    <div class="alert alert-danger" *ngIf="!contactForm.valid && contactForm.touched">
+                      <span class="help-block">Va rugam sa completati toate datele</span>
+                    </div>
                   </div>
 
                   <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                    <input type="text" name="lastname" value="" placeholder="Last Name" required>
+                    <input type="text" name="name" required minlength="3" ngModel placeholder="Nume">
                   </div>
 
                   <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                    <input type="email" name="email" value="" placeholder="Your Email" required>
+                    <input type="text" name="phone" placeholder="Telefon" required minlength="3" ngModel>
                   </div>
 
                   <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                    <input type="text" name="phone" value="" placeholder="Phone No." required>
+                    <input type="email" name="email" placeholder="Email" required minlength="6" ngModel>
+                  </div>
+
+                  <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                    <input type="text" name="city" placeholder="Locuiesc in (Bucuresti, Ilfov)" required minlength="3" ngModel>
                   </div>
 
                   <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                    <textarea name="message" placeholder="Question or Request"></textarea>
+                    <textarea name="message" ngModel placeholder="Solicitare pe scurt"></textarea>
+                  </div>
+
+                  <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                    <input ngModel required type="checkbox" name="gdpr">
+                    <label for="gdpr">Sunt de acord cu inregistrarea, stocarea si prelucrarea datelor mele personale conform <a routerLink="/confidentialitate">Politicii de Confidentialitate</a></label>
                   </div>
 
                   <div class="form-group btn-column col-md-12 col-sm-12 col-xs-12">
-                    <button type="submit" class="theme-btn submit-btn"><span class="txt">send message <i
+                    <button type="submit" [disabled]="!contactForm.valid" class="theme-btn submit-btn"><span class="txt">Trimite <i
                           class="fa fa-angle-right"></i></span></button>
                   </div>
 
@@ -69,11 +80,11 @@
       </div>
       <div class="content-column col-lg-6 col-md-12 col-sm-12">
         <div class="inner-column">
-          <h4>Have a question or <br> Need to set up your <br> security system?</h4>
-          <div class="text">Give us a call and our experienced and friendly staff would be happy to assist you.</div>
+          <h4>Vrei sa ne pui o intrebare? <br> Ai  un proiect de amenajare?</h4>
+          <div class="text">Contacteaza-ne si stabilim cele mai bune solutii pentru tine.</div>
           <ul class="info-list">
-            <li><span class="icon flaticon-call-3"></span><a href="tel:1-700-231-0025">1-700-231-0025</a></li>
-            <li><span class="icon flaticon-email-5"></span><a href="mailto:support@teknik.net">support@teknik.net</a>
+            <li><span class="icon flaticon-call-3"></span><a href="tel:+40743697295">0743 697 295</a></li>
+            <li><span class="icon flaticon-email-5"></span><a href="mailto:lukinstall24perfect@yahoo.com">lukinstall24perfect@yahoo.com</a>
             </li>
           </ul>
         </div>
@@ -90,31 +101,14 @@
 
     <div class="sponsors-outer">
       <!--Sponsors Carousel-->
-      <ul class="sponsors-carousel owl-carousel owl-theme">
+      <ul class="sponsors-carousel owl-carousel owl-theme" style="display: flex; align-items: center;">
         <li class="slide-item">
-          <figure class="image-box"><a href="#"><img src="https://via.placeholder.com/240x115" alt=""></a></figure>
+          <figure class="image-box"><a><img src="/assets/images/romstal-vector-logo.svg" alt=""></a></figure>
         </li>
         <li class="slide-item">
-          <figure class="image-box"><a href="#"><img src="https://via.placeholder.com/240x115" alt=""></a></figure>
+          <figure class="image-box"><a><img src="/assets/images/rehau-logo.svg" alt=""></a></figure>
         </li>
-        <li class="slide-item">
-          <figure class="image-box"><a href="#"><img src="https://via.placeholder.com/240x115" alt=""></a></figure>
-        </li>
-        <li class="slide-item">
-          <figure class="image-box"><a href="#"><img src="https://via.placeholder.com/240x115" alt=""></a></figure>
-        </li>
-        <li class="slide-item">
-          <figure class="image-box"><a href="#"><img src="https://via.placeholder.com/240x115" alt=""></a></figure>
-        </li>
-        <li class="slide-item">
-          <figure class="image-box"><a href="#"><img src="https://via.placeholder.com/240x115" alt=""></a></figure>
-        </li>
-        <li class="slide-item">
-          <figure class="image-box"><a href="#"><img src="https://via.placeholder.com/240x115" alt=""></a></figure>
-        </li>
-        <li class="slide-item">
-          <figure class="image-box"><a href="#"><img src="https://via.placeholder.com/240x115" alt=""></a></figure>
-        </li>
+       
       </ul>
     </div>
 
