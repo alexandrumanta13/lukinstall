@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 import { SEOServiceService } from './seoservice.service';
 import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 import { filter, map, mergeMap } from 'rxjs/operators';
-declare var $: any;
+import { IpServiceService } from './ip-service.service';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 
 @Component({
@@ -12,19 +13,40 @@ declare var $: any;
 })
 export class AppComponent {
 
-  publicIP: string;
-  res: string;
-  http: any;
+  ipAddress: string;
 
   constructor(
     private router: Router,
     private activatedRoute: ActivatedRoute,
-    private _seoService: SEOServiceService
+    private _seoService: SEOServiceService,
+    private ip: IpServiceService,
+    private _httpClient: HttpClient
   ) { }
 
+  getIP() {
+    this.ip.getIPAddress().subscribe((res: any) => {
+      this.ipAddress = res.ip;
+      this.saveIP(res.ip);
+    });
+    
+  }
 
+  saveIP(ip) {
+    console.log(ip)
+    let headers = new HttpHeaders();
+    headers.append('Content-Type', 'multipart/form-data');
+    headers.append('Accept', 'application/json');
+    let options = { headers: headers };
+
+    this._httpClient.post('https://www.lukinstall.ro/data/save-ip.php', {"ip": ip}, options)
+      .subscribe((response: any) => {
+        console.log(response);
+      });
+
+  }
 
   ngOnInit() {
+    
     this.router.events.pipe(
       filter((event) => event instanceof NavigationEnd),
       map(() => this.activatedRoute),
@@ -51,9 +73,11 @@ export class AppComponent {
     });
 
 
-    $.getJSON('https://ipapi.co/json/', function (data) {
-      console.log(JSON.stringify(data, null, 2));
-    });
+
+  }
+
+  ngAfterViewInit() {
+    this.getIP();
   }
 
 
