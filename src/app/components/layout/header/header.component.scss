@@ -26,3 +26,7 @@
 .sticky-header #navbarSupportedContent:first-child {
     //display: none !important;
 }
+
+.menu-outer .navbar-collapse:first-child {
+    display: none !important;
+}
