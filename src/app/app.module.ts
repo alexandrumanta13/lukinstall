@@ -95,7 +95,7 @@ import {NgxGalleryModule} from '@kolkov/ngx-gallery';
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     BrowserAnimationsModule,
     CarouselModule,
-    NgxGalleryModule
+    NgxGalleryModule,
   ],
   exports: [],
   providers: [],

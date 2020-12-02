@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { SEOServiceService } from './seoservice.service';
 import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 import { filter, map, mergeMap } from 'rxjs/operators';
+declare var $: any;
 
 
 @Component({
@@ -10,7 +11,11 @@ import { filter, map, mergeMap } from 'rxjs/operators';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
- 
+
+  publicIP: string;
+  res: string;
+  http: any;
+
   constructor(
     private router: Router,
     private activatedRoute: ActivatedRoute,
@@ -41,8 +46,15 @@ export class AppComponent {
       if (!(evt instanceof NavigationEnd)) {
         return;
       }
-      
+
       window.scrollTo(0, 0);
     });
+
+
+    $.getJSON('https://ipapi.co/json/', function (data) {
+      console.log(JSON.stringify(data, null, 2));
+    });
   }
+
+
 }
