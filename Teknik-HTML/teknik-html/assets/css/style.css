@@ -3810,12 +3810,12 @@ img{
 	text-transform:uppercase;
 }
 
-.page-breadcrumb{
+.class="page-breadcrumb" style="display: none"{
 	position:relative;
 	margin-top:20px;
 }
 
-.page-breadcrumb li{
+.class="page-breadcrumb" style="display: none" li{
 	position:relative;
 	display:inline-block;
 	margin-right:10px;
@@ -3826,7 +3826,7 @@ img{
 	text-transform:capitalize;
 }
 
-.page-breadcrumb li:after{
+.class="page-breadcrumb" style="display: none" li:after{
 	position:absolute;
 	content: ":";
 	right:-2px;
@@ -3837,16 +3837,16 @@ img{
 	font-family: 'FontAwesome';
 }
 
-.page-breadcrumb li:last-child::after{
+.class="page-breadcrumb" style="display: none" li:last-child::after{
 	display: none;
 }
 
-.page-breadcrumb li:last-child{
+.class="page-breadcrumb" style="display: none" li:last-child{
 	padding-right:0px;
 	margin-right:0px;
 }
 
-.page-breadcrumb li a{
+.class="page-breadcrumb" style="display: none" li a{
 	color:#ffffff;
 	font-weight:300;
 	text-transform: capitalize;
@@ -3857,7 +3857,7 @@ img{
 	-o-transition:all 0.3s ease;
 }
 
-.page-breadcrumb li a:hover{
+.class="page-breadcrumb" style="display: none" li a:hover{
 	color:#f89429;
 }
 
