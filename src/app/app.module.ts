@@ -29,8 +29,7 @@ import { ServicesComponent } from './pages/home/services/services.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { OldSiteSectionComponent } from './pages/home/old-site-section/old-site-section.component';
 
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { CarouselModule } from 'ngx-owl-carousel-o';
+
 import { InstalatorSectorOneComponent } from './pages/instalator-sector-one/instalator-sector-one.component';
 import { InstalatorSectorTwoComponent } from './pages/instalator-sector-two/instalator-sector-two.component';
 import { InstalatorBucurestiComponent } from './pages/instalator-bucuresti/instalator-bucuresti.component';
@@ -56,6 +55,9 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import { CumAerisimCalorifereleDinLocuintaComponent } from './pages/blog/cum-aerisim-caloriferele-din-locuinta/cum-aerisim-caloriferele-din-locuinta.component';
 import { BateriaDeChiuvetaCuSenzoriAvantajeSiDezavantajeComponent } from './pages/blog/bateria-de-chiuveta-cu-senzori-avantaje-si-dezavantaje/bateria-de-chiuveta-cu-senzori-avantaje-si-dezavantaje.component';
 import { ArticolComponent } from './pages/blog/articol/articol.component';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @NgModule({
   declarations: [
@@ -109,7 +111,9 @@ import { ArticolComponent } from './pages/blog/articol/articol.component';
     BrowserAnimationsModule,
     CarouselModule,
     NgxGalleryModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    BrowserAnimationsModule,
+    CarouselModule,
   ],
   exports: [],
   providers: [],
