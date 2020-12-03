@@ -29,6 +29,12 @@ import { MontajCentraleTermiceComponent } from './pages/montaj-centrale-termice/
 import { DesfundareCanalizareComponent } from './pages/desfundare-canalizare/desfundare-canalizare.component';
 import { DesfundareWcComponent } from './pages/desfundare-wc/desfundare-wc.component';
 import { LucrariComponent } from './pages/lucrari/lucrari.component';
+import { BlogComponent } from './pages/blog/blog.component';
+import { ChiuvetaPotrivitaPentruBaiaTaComponent } from './pages/blog/chiuveta-potrivita-pentru-baia-ta/chiuveta-potrivita-pentru-baia-ta.component';
+import { InstalatiaTermicaComponent } from './pages/blog/instalatia-termica/instalatia-termica.component';
+import { CumAerisimCalorifereleDinLocuintaComponent } from './pages/blog/cum-aerisim-caloriferele-din-locuinta/cum-aerisim-caloriferele-din-locuinta.component';
+import { BateriaDeChiuvetaCuSenzoriAvantajeSiDezavantajeComponent } from './pages/blog/bateria-de-chiuveta-cu-senzori-avantaje-si-dezavantaje/bateria-de-chiuveta-cu-senzori-avantaje-si-dezavantaje.component';
+import { ArticolComponent } from './pages/blog/articol/articol.component';
 
 const routes: Routes = [
   {
@@ -208,6 +214,55 @@ const routes: Routes = [
     path: 'contact', component: ContactComponent,
     data: {
       title: 'Contact',
+      description: '',
+      ogUrl: 'your og url'
+    }
+  },
+
+  {
+    path: 'blog', component: BlogComponent,
+    data: {
+      title: 'Blog',
+      description: '',
+      ogUrl: 'your og url'
+    }
+  },
+  {
+    path: 'blog/articol/:articleLink/:articleLinkID', component: ArticolComponent,
+    data: {
+      title: 'Blog',
+      description: '',
+      ogUrl: 'your og url'
+    }
+  },
+  {
+    path: 'blog/chiuveta-potrivita-pentru-baia-ta', component: ChiuvetaPotrivitaPentruBaiaTaComponent,
+    data: {
+      title: 'Blog',
+      description: '',
+      ogUrl: 'your og url'
+    }
+  },
+  {
+    path: 'blog/instalatia-termica', component: InstalatiaTermicaComponent,
+    data: {
+      title: 'Blog',
+      description: '',
+      ogUrl: 'your og url'
+    }
+  },
+  {
+    path: 'blog/cum-aerisim-caloriferele-din-locuinta', component: CumAerisimCalorifereleDinLocuintaComponent,
+    data: {
+      title: 'Blog',
+      description: '',
+      ogUrl: 'your og url'
+    }
+  },
+  {
+    path: 'blog/bateria-de-chiuveta-cu-senzori-avantaje-si-dezavantaje', component: BateriaDeChiuvetaCuSenzoriAvantajeSiDezavantajeComponent,
+    data: {
+      title: 'Blog',
       description: '',
       ogUrl: 'your og url'
     }

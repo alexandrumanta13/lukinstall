@@ -48,7 +48,14 @@ import { DesfundareCanalizareComponent } from './pages/desfundare-canalizare/des
 import { DesfundareWcComponent } from './pages/desfundare-wc/desfundare-wc.component';
 import { LucrariComponent } from './pages/lucrari/lucrari.component';
 
-import {NgxGalleryModule} from '@kolkov/ngx-gallery';
+import { NgxGalleryModule } from '@kolkov/ngx-gallery';
+import { BlogComponent } from './pages/blog/blog.component';
+import { ChiuvetaPotrivitaPentruBaiaTaComponent } from './pages/blog/chiuveta-potrivita-pentru-baia-ta/chiuveta-potrivita-pentru-baia-ta.component';
+import { InstalatiaTermicaComponent } from './pages/blog/instalatia-termica/instalatia-termica.component';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { CumAerisimCalorifereleDinLocuintaComponent } from './pages/blog/cum-aerisim-caloriferele-din-locuinta/cum-aerisim-caloriferele-din-locuinta.component';
+import { BateriaDeChiuvetaCuSenzoriAvantajeSiDezavantajeComponent } from './pages/blog/bateria-de-chiuveta-cu-senzori-avantaje-si-dezavantaje/bateria-de-chiuveta-cu-senzori-avantaje-si-dezavantaje.component';
+import { ArticolComponent } from './pages/blog/articol/articol.component';
 
 @NgModule({
   declarations: [
@@ -84,7 +91,13 @@ import {NgxGalleryModule} from '@kolkov/ngx-gallery';
     MontajCentraleTermiceComponent,
     DesfundareCanalizareComponent,
     DesfundareWcComponent,
-    LucrariComponent
+    LucrariComponent,
+    BlogComponent,
+    ChiuvetaPotrivitaPentruBaiaTaComponent,
+    InstalatiaTermicaComponent,
+    CumAerisimCalorifereleDinLocuintaComponent,
+    BateriaDeChiuvetaCuSenzoriAvantajeSiDezavantajeComponent,
+    ArticolComponent
   ],
   imports: [
     BrowserModule,
@@ -96,6 +109,7 @@ import {NgxGalleryModule} from '@kolkov/ngx-gallery';
     BrowserAnimationsModule,
     CarouselModule,
     NgxGalleryModule,
+    NgxPaginationModule
   ],
   exports: [],
   providers: [],

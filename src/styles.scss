@@ -15,3 +15,80 @@ body {
   align-items: center;
 }
 
+.ngx-pagination {
+  display: flex;
+  align-items: center;
+
+  .pagination-previous,
+  .pagination-next {
+    position: relative;
+    width: auto;
+    height: auto;
+    color: #555555;
+    font-size: 15px;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 300;
+    box-shadow: inherit;
+    border: none;
+    background: none;
+    transition: all 300ms ease;
+    margin: 0 16px !important;
+
+    &:hover {
+      color: #fda50f;
+      background: none;
+
+      a {
+        background-color: transparent !important;
+        color: #fda50f;
+      }
+    }
+
+    
+  }
+
+  li {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    color: #222222;
+    font-size: 16px;
+    font-weight: 400;
+
+    transition: all 0.3s ease;
+    border-radius: 2px;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    border: 2px solid #dddddd;
+    margin: 0px 3px !important;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    &.current {
+      color: #ffffff;
+      border-color: #7cb434;
+      background-color: #7cb434;
+    }
+  }
+
+  .small-screen {
+    display: none !important;
+  }
+
+  .disabled {
+    color: #cacaca !important;
+  }
+}
+
+.styled-pagination li.prev a {}
