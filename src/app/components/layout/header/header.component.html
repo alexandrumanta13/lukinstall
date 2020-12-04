@@ -29,33 +29,32 @@
 
             <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
               <ul class="navigation clearfix">
-                <li class="current"><a routerLink="/">Acasa</a></li>
-                <li class="dropdown"><a routerLink="/instalator-bucuresti">Instalator Bucuresti</a>
+                <li class="current"><a (click)="activeLink($event, 'parent', '/')">Acasa</a></li>
+                <li class="dropdown"><a (click)="activeLink($event, 'parent', '/instalator-bucuresti')">Instalator Bucuresti</a>
                   <ul>
-                    <li><a routerLink="/instalator-sector-1">Instalator Sector 1</a></li>
-                    <li><a routerLink="/instalator-sector-2">Instalator Sector 2</a></li>
-                    <li><a routerLink="/instalator-sector-3">Instalator Sector 3</a></li>
-                    <li><a routerLink="/instalator-sector-4">Instalator Sector 4</a></li>
-                    <li><a routerLink="/instalator-sector-5">Instalator Sector 5</a></li>
-                    <li><a routerLink="/instalator-sector-6">Instalator Sector 6</a></li>
+                    <li><a (click)="activeLink($event, 'child', '/instalator-sector-1')">Instalator Sector 1</a></li>
+                    <li><a (click)="activeLink($event, 'child', '/instalator-sector-2')">Instalator Sector 2</a></li>
+                    <li><a (click)="activeLink($event, 'child', '/instalator-sector-3')">Instalator Sector 3</a></li>
+                    <li><a (click)="activeLink($event, 'child', '/instalator-sector-4')">Instalator Sector 4</a></li>
+                    <li><a (click)="activeLink($event, 'child', '/instalator-sector-5')">Instalator Sector 5</a></li>
+                    <li><a (click)="activeLink($event, 'child', '/instalator-sector-6')">Instalator Sector 6</a></li>
                   </ul>
                 </li>
-                <li class="dropdown"><a routerLink="/instalator-sanitar">Instalator Sanitar</a>
+                <li class="dropdown"><a (click)="activeLink($event, 'parent', '/instalator-sanitar')">Instalator Sanitar</a>
                   <ul>
-                    <li><a routerLink="/desfundare-canalizare">Desfundare Canalizare</a></li>
-                    <li><a routerLink="/desfundare-wc">Desfundare WC</a></li>
+                    <li><a (click)="activeLink($event, 'child', '/desfundare-canalizare')">Desfundare Canalizare</a></li>
+                    <li><a (click)="activeLink($event, 'child', '/desfundare-wc')">Desfundare WC</a></li>
                   </ul>
                 </li>
-
-                <li class="dropdown"><a routerLink="/instalatii-termice">Instalatii Termice</a>
+  
+                <li class="dropdown"><a (click)="activeLink($event, 'parent', '/instalatii-termice')">Instalatii Termice</a>
                   <ul>
-                    <li><a routerLink="/montaj-centrale-termice">Montaj Centrale Termice</a></li>
+                    <li><a (click)="activeLink($event, 'child', '/montaj-centrale-termice')">Montaj Centrale Termice</a></li>
                   </ul>
                 </li>
-                <li><a routerLink="/instalator-non-stop">Instalator Non Stop</a></li>
-                <li><a routerLink="/lucrari">Lucrari</a></li>
-
-                <li><a routerLink="/contact">Contact</a></li>
+                <li><a (click)="activeLink($event, 'parent', '/instalator-non-stop')">Instalator Non Stop</a></li>
+                <li><a (click)="activeLink($event, 'parent', '/lucrari')">Lucrari</a></li>
+                <li><a (click)="activeLink($event, 'parent', '/contact')">Contact</a></li>
               </ul>
             </div>
           </nav>
@@ -88,32 +87,32 @@
         <nav class="main-menu">
           <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
             <ul class="navigation clearfix">
-              <li class="current"><a routerLink="/">Acasa</a></li>
-              <li class="dropdown"><a routerLink="/instalator-bucuresti">Instalator Bucuresti</a>
+              <li class="current"><a (click)="activeLink($event, 'parent', '/')">Acasa</a></li>
+              <li class="dropdown"><a (click)="activeLink($event, 'parent', '/instalator-bucuresti')">Instalator Bucuresti</a>
                 <ul>
-                  <li><a routerLink="/instalator-sector-1">Instalator Sector 1</a></li>
-                  <li><a routerLink="/instalator-sector-2">Instalator Sector 2</a></li>
-                  <li><a routerLink="/instalator-sector-3">Instalator Sector 3</a></li>
-                  <li><a routerLink="/instalator-sector-4">Instalator Sector 4</a></li>
-                  <li><a routerLink="/instalator-sector-5">Instalator Sector 5</a></li>
-                  <li><a routerLink="/instalator-sector-6">Instalator Sector 6</a></li>
+                  <li><a (click)="activeLink($event, 'child', '/instalator-sector-1')">Instalator Sector 1</a></li>
+                  <li><a (click)="activeLink($event, 'child', '/instalator-sector-2')">Instalator Sector 2</a></li>
+                  <li><a (click)="activeLink($event, 'child', '/instalator-sector-3')">Instalator Sector 3</a></li>
+                  <li><a (click)="activeLink($event, 'child', '/instalator-sector-4')">Instalator Sector 4</a></li>
+                  <li><a (click)="activeLink($event, 'child', '/instalator-sector-5')">Instalator Sector 5</a></li>
+                  <li><a (click)="activeLink($event, 'child', '/instalator-sector-6')">Instalator Sector 6</a></li>
                 </ul>
               </li>
-              <li class="dropdown"><a routerLink="/instalator-sanitar">Instalator Sanitar</a>
+              <li class="dropdown"><a (click)="activeLink($event, 'parent', '/instalator-sanitar')">Instalator Sanitar</a>
                 <ul>
-                  <li><a routerLink="/desfundare-canalizare">Desfundare Canalizare</a></li>
-                  <li><a routerLink="/desfundare-wc">Desfundare WC</a></li>
+                  <li><a (click)="activeLink($event, 'child', '/desfundare-canalizare')">Desfundare Canalizare</a></li>
+                  <li><a (click)="activeLink($event, 'child', '/desfundare-wc')">Desfundare WC</a></li>
                 </ul>
               </li>
 
-              <li class="dropdown"><a routerLink="/instalatii-termice">Instalatii Termice</a>
+              <li class="dropdown"><a (click)="activeLink($event, 'parent', '/instalatii-termice')">Instalatii Termice</a>
                 <ul>
-                  <li><a routerLink="/montaj-centrale-termice">Montaj Centrale Termice</a></li>
+                  <li><a (click)="activeLink($event, 'child', '/montaj-centrale-termice')">Montaj Centrale Termice</a></li>
                 </ul>
               </li>
-              <li><a routerLink="/instalator-non-stop">Instalator Non Stop</a></li>
-              <li><a routerLink="/lucrari">Lucrari</a></li>
-              <li><a routerLink="/contact">Contact</a></li>
+              <li><a (click)="activeLink($event, 'parent', '/instalator-non-stop')">Instalator Non Stop</a></li>
+              <li><a (click)="activeLink($event, 'parent', '/lucrari')">Lucrari</a></li>
+              <li><a (click)="activeLink($event, 'parent', '/contact')">Contact</a></li>
             </ul>
           </div>
         </nav><!-- Main Menu End-->
@@ -136,7 +135,7 @@
             <li class="current"><a (click)="navigateSubmenu('/')" routerLink="/">Acasa</a></li>
             <li class="dropdown"><a (click)="navigateSubmenu('/instalator-bucuresti')"
                 routerLink="/instalator-bucuresti">Instalator Bucuresti</a>
-              <ul class="submenu">
+              <ul class="submenu" [@toggleHeight]="navigationSubState.InstalatorBucuresti">
                 <li><a (click)="navigateSubmenu('/instalator-sector-1')" routerLink="/instalator-sector-1">Instalator
                     Sector 1</a></li>
                 <li><a (click)="navigateSubmenu('/instalator-sector-2')" routerLink="/instalator-sector-2">Instalator
@@ -150,25 +149,25 @@
                 <li><a (click)="navigateSubmenu('/instalator-sector-6')" routerLink="/instalator-sector-6">Instalator
                     Sector 6</a></li>
               </ul>
-              <div class="dropdown-btn"><span class="fa fa-angle-down"></span></div>
+              <div class="dropdown-btn" (click)="toggleSubmenu($event, 'InstalatorBucuresti')"><span class="fa fa-angle-down"></span></div>
             </li>
             <li class="dropdown"><a (click)="navigateSubmenu('/instalator-sanitar')"
                 routerLink="/instalator-sanitar">Instalator Sanitar</a>
-              <ul class="submenu">
+              <ul class="submenu" [@toggleHeight]="navigationSubState.InstalatorSanitar">
                 <li><a (click)="navigateSubmenu('/desfundare-canalizare')" routerLink="/desfundare-canalizare">Desfundare
                     Canalizare</a></li>
                 <li><a (click)="navigateSubmenu('/desfundare-wc')" routerLink="/desfundare-wc">Desfundare WC</a></li>
               </ul>
-              <div class="dropdown-btn"><span class="fa fa-angle-down"></span></div>
+              <div class="dropdown-btn" (click)="toggleSubmenu($event, 'InstalatorSanitar')"><span class="fa fa-angle-down"></span></div>
             </li>
 
             <li class="dropdown"><a (click)="navigateSubmenu('/instalatii-termice')"
                 routerLink="/instalatii-termice">Instalatii Termice</a>
-              <ul class="submenu">
+              <ul class="submenu" [@toggleHeight]="navigationSubState.InstalatiiTermice">
                 <li><a (click)="navigateSubmenu('/montaj-centrale-termice')" routerLink="/montaj-centrale-termice">Montaj
                     Centrale Termice</a></li>
               </ul>
-              <div class="dropdown-btn"><span class="fa fa-angle-down"></span></div>
+              <div class="dropdown-btn" (click)="toggleSubmenu($event, 'InstalatiiTermice')"><span class="fa fa-angle-down"></span></div>
             </li>
             <li><a (click)="navigateSubmenu('/instalator-non-stop')" routerLink="/instalator-non-stop">Instalator Non
                 Stop</a></li>

@@ -30,3 +30,7 @@
 .menu-outer .navbar-collapse:first-child {
     //display: none !important;
 }
+
+.mobile-menu .navigation li > ul, .mobile-menu .navigation li > ul > li > ul {
+    padding-left: 20px;
+}

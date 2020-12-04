@@ -38,9 +38,9 @@
 		//$('.main-header li.dropdown').append('<div class="dropdown-btn"><span class="fa fa-angle-down"></span></div>');
 		
 		//Dropdown Button
-		$('.main-header li.dropdown .dropdown-btn').on('click', function() {
-			$(this).prev('ul').slideToggle(500);
-		});
+		// $('.main-header li.dropdown .dropdown-btn').on('click', function() {
+		// 	$(this).prev('ul').slideToggle(500);
+		// });
 		
 		//Dropdown Menu / Fullscreen Nav
 		$('.fullscreen-menu .navigation li.dropdown > a').on('click', function() {

@@ -15,7 +15,8 @@ declare var $: any;
       })),
       state('active', style({
         height: '*',
-        opacity: '1'
+        opacity: '1',
+        display: 'block'
       })),
       transition('inactive => active', animate('200ms ease-in')),
       transition('active => inactive', animate('200ms ease-out'))
@@ -26,8 +27,9 @@ export class HeaderComponent implements OnInit {
   open: boolean;
 
   navigationSubState: { [menu: string]: string } = {
-    Instalator: 'inactive',
-    Messages: 'inactive'
+    InstalatorBucuresti: 'inactive',
+    InstalatorSanitar: 'inactive',
+    InstalatiiTermice: 'inactive'
   };
 
   constructor(private router: Router) { }
@@ -50,6 +52,23 @@ export class HeaderComponent implements OnInit {
 
   closeMenu() {
 
+  }
+
+  activeLink(event, type, link) {
+    console.log(event.target.parentElement)
+    console.log(event.target.closest(".dropdown"))
+    const current = document.querySelectorAll('.current');
+    for (let i = 0; i < current.length; i++) {
+      current[i].classList.remove('current');
+    }
+
+    if (type === 'parent') {
+      event.target.parentElement.classList.add('current');
+    } else {
+      event.target.closest(".dropdown").classList.add("current")
+    }
+    this.router.navigate([link]);
+    
   }
 
 
