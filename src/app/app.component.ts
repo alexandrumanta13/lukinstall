@@ -56,10 +56,7 @@ export class AppComponent {
         case event instanceof NavigationCancel:
         case event instanceof NavigationError: {
           this.visiblityState = 'hidden';
-          setTimeout(() => {
-            $('.preloader').delay(200).fadeOut(500);
-      
-          }, 1000);
+          
           break;
         }
         default: {
@@ -126,7 +123,10 @@ export class AppComponent {
 
   ngAfterViewInit() {
     this.getIP();
-    
+    setTimeout(() => {
+      $('.preloader').delay(200).fadeOut(500);
+
+    }, 1000);
   }
 
 

@@ -17,12 +17,12 @@ export class HeaderComponent implements OnInit {
   }
 
   ngAfterViewInit() {
-    setTimeout(() => {
+   
       if($('.main-header').length){
         $('.main-header li.dropdown').append('<div class="dropdown-btn"><span class="fa fa-angle-down"></span></div>');
   
       }
-    }, 1000);
+    
     
 
     if (window.innerWidth <= 800) {
