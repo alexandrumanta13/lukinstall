@@ -35,7 +35,7 @@
 	
 	//Submenu Dropdown Toggle
 	if($('.main-header li.dropdown ul').length){
-		$('.main-header li.dropdown').append('<div class="dropdown-btn"><span class="fa fa-angle-down"></span></div>');
+		//$('.main-header li.dropdown').append('<div class="dropdown-btn"><span class="fa fa-angle-down"></span></div>');
 		
 		//Dropdown Button
 		$('.main-header li.dropdown .dropdown-btn').on('click', function() {
@@ -66,23 +66,23 @@
 		$('.mobile-menu .menu-box').mCustomScrollbar();
 		
 		var mobileMenuContent = $('.main-header .nav-outer .main-menu').html();
-		$('.mobile-menu .menu-box .menu-outer').append(mobileMenuContent);
+		//$('.mobile-menu .menu-box .menu-outer').append(mobileMenuContent);
 		//$('.sticky-header .main-menu').append(mobileMenuContent);
 		
 		//Dropdown Button
-		$('.mobile-menu li.dropdown .dropdown-btn').on('click', function() {
-			$(this).toggleClass('open');
-			$(this).prev('ul').slideToggle(500);
-		});
+		// $('.mobile-menu li.dropdown .dropdown-btn').on('click', function() {
+		// 	$(this).toggleClass('open');
+		// 	$(this).prev('ul').slideToggle(500);
+		// });
 		//Menu Toggle Btn
-		$('.mobile-nav-toggler').on('click', function() {
-			$('body').addClass('mobile-menu-visible');
-		});
+		// $('.mobile-nav-toggler').on('click', function() {
+		// 	$('body').addClass('mobile-menu-visible');
+		// });
 
 		//Menu Toggle Btn
-		$('.mobile-menu .menu-backdrop,.mobile-menu .close-btn').on('click', function() {
-			$('body').removeClass('mobile-menu-visible');
-		});
+		// $('.mobile-menu .menu-backdrop,.mobile-menu .close-btn').on('click', function() {
+		// 	$('body').removeClass('mobile-menu-visible');
+		// });
 		
 		//Dropdown Button
 		$('.pricing-tabs .tab-buttons .yearly').on('click', function() {

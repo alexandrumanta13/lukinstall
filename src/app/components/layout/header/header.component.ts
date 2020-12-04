@@ -1,13 +1,34 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
+import { trigger, state, transition, style, animate } from '@angular/animations';
+
 declare var $: any;
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
+  animations: [
+    trigger('toggleHeight', [
+      state('inactive', style({
+        height: '0',
+        opacity: '0'
+      })),
+      state('active', style({
+        height: '*',
+        opacity: '1'
+      })),
+      transition('inactive => active', animate('200ms ease-in')),
+      transition('active => inactive', animate('200ms ease-out'))
+    ])
+  ]
 })
 export class HeaderComponent implements OnInit {
   open: boolean;
+
+  navigationSubState: { [menu: string]: string } = {
+    Instalator: 'inactive',
+    Messages: 'inactive'
+  };
 
   constructor(private router: Router) { }
 
@@ -17,53 +38,9 @@ export class HeaderComponent implements OnInit {
   }
 
   ngAfterViewInit() {
-   
-      if($('.main-header').length){
-        $('.main-header li.dropdown').append('<div class="dropdown-btn"><span class="fa fa-angle-down"></span></div>');
-  
-      }
-    
-    
-
     if (window.innerWidth <= 800) {
 
-      $('.mobile-menu li.dropdown .dropdown-btn').on('click', function () {
-        $(this).toggleClass('open');
-        $(this).prev('ul').slideToggle(500);
-      });
 
-
-      //Dropdown Button
-      $('.main-header li.dropdown .dropdown-btn').on('click', function () {
-        $(this).prev('ul').slideToggle(500);
-      });
-
-      if ($('.mobile-menu').length) {
-
-        $('.mobile-menu .menu-box').mCustomScrollbar();
-
-        var mobileMenuContent = $('.main-header .nav-outer .main-menu').html();
-        $('.mobile-menu .menu-box .menu-outer').append(mobileMenuContent);
-        //$('.sticky-header .main-menu').append(mobileMenuContent);
-
-        //Dropdown Button
-        $('.mobile-menu li.dropdown .dropdown-btn').on('click', function () {
-          $(this).toggleClass('open');
-          $(this).prev('ul').slideToggle(500);
-        });
-        //Menu Toggle Btn
-        $('.mobile-nav-toggler').on('click', function () {
-          $('body').addClass('mobile-menu-visible');
-        });
-
-        //Menu Toggle Btn
-        $('.mobile-menu .menu-backdrop,.mobile-menu .close-btn').on('click', function () {
-          $('body').removeClass('mobile-menu-visible');
-        });
-
-
-
-      }
     }
   }
 
@@ -77,21 +54,28 @@ export class HeaderComponent implements OnInit {
 
 
 
-  toggleSubmenu(link) {
+  navigateSubmenu(link) {
     this.mobileToggler();
 
     const links = document.querySelectorAll('.dropdown-btn');
     const submenu = document.querySelectorAll('.submenu');
 
-    for (let i = 0; i < links.length; i++) {
-      links[i].classList.remove('open');
-    }
+
+    // for (let i = 0; i < links.length; i++) {
+    //   links[i].classList.remove('open');
+    // }
 
     for (let i = 0; i < submenu.length; i++) {
       submenu[i].removeAttribute('style');
     }
     this.router.navigate([link]);
 
+  }
+
+  toggleSubmenu(event, menuName) {
+    event.preventDefault();
+    this.navigationSubState[menuName] = (this.navigationSubState[menuName] === 'inactive' ? 'active' : 'inactive');
+    event.target.classList.toggle('open');
   }
 
   detectMob() {

@@ -125,8 +125,10 @@ export class AppComponent {
     this.getIP();
     setTimeout(() => {
       $('.preloader').delay(200).fadeOut(500);
+      (<HTMLElement>document.querySelector('.preloader')).classList.add('hidden');
 
     }, 1000);
+   
   }
 
 
