@@ -12,6 +12,7 @@ export class InstalatorBucurestiComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+	setTimeout(() => {
     $('.count-box').appear(function(){
 	
 			var $t = $(this),
@@ -37,6 +38,7 @@ export class InstalatorBucurestiComponent implements OnInit {
 			}
 			
 		},{accY: 0});
+	}, 1000);
   }
 
 }

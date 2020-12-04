@@ -11,44 +11,58 @@ export class HeaderComponent implements OnInit {
 
   constructor(private router: Router) { }
 
-  ngOnInit(): void { 
-    
-   
+  ngOnInit(): void {
+
+
   }
 
   ngAfterViewInit() {
-    if( window.innerWidth <= 800 ) {
-      
+    setTimeout(() => {
+      if($('.main-header').length){
+        $('.main-header li.dropdown').append('<div class="dropdown-btn"><span class="fa fa-angle-down"></span></div>');
+  
+      }
+    }, 1000);
+    
+
+    if (window.innerWidth <= 800) {
+
       $('.mobile-menu li.dropdown .dropdown-btn').on('click', function () {
         $(this).toggleClass('open');
         $(this).prev('ul').slideToggle(500);
       });
 
-      if($('.mobile-menu').length){
-		
+
+      //Dropdown Button
+      $('.main-header li.dropdown .dropdown-btn').on('click', function () {
+        $(this).prev('ul').slideToggle(500);
+      });
+
+      if ($('.mobile-menu').length) {
+
         $('.mobile-menu .menu-box').mCustomScrollbar();
-        
+
         var mobileMenuContent = $('.main-header .nav-outer .main-menu').html();
         $('.mobile-menu .menu-box .menu-outer').append(mobileMenuContent);
         //$('.sticky-header .main-menu').append(mobileMenuContent);
-        
+
         //Dropdown Button
-        $('.mobile-menu li.dropdown .dropdown-btn').on('click', function() {
+        $('.mobile-menu li.dropdown .dropdown-btn').on('click', function () {
           $(this).toggleClass('open');
           $(this).prev('ul').slideToggle(500);
         });
         //Menu Toggle Btn
-        $('.mobile-nav-toggler').on('click', function() {
+        $('.mobile-nav-toggler').on('click', function () {
           $('body').addClass('mobile-menu-visible');
         });
-    
+
         //Menu Toggle Btn
-        $('.mobile-menu .menu-backdrop,.mobile-menu .close-btn').on('click', function() {
+        $('.mobile-menu .menu-backdrop,.mobile-menu .close-btn').on('click', function () {
           $('body').removeClass('mobile-menu-visible');
         });
-        
-        
-        
+
+
+
       }
     }
   }
@@ -61,14 +75,14 @@ export class HeaderComponent implements OnInit {
 
   }
 
- 
+
 
   toggleSubmenu(link) {
     this.mobileToggler();
-    
+
     const links = document.querySelectorAll('.dropdown-btn');
     const submenu = document.querySelectorAll('.submenu');
-    
+
     for (let i = 0; i < links.length; i++) {
       links[i].classList.remove('open');
     }
@@ -77,7 +91,7 @@ export class HeaderComponent implements OnInit {
       submenu[i].removeAttribute('style');
     }
     this.router.navigate([link]);
-    
+
   }
 
   detectMob() {

@@ -42,35 +42,36 @@ export class SliderComponent implements OnInit {
 
 
   ngOnInit(): void {
-    $('.main-slider-carousel').owlCarousel({
-      animateOut: 'fadeOut',
-      animateIn: 'fadeIn',
-      loop:false,
-      margin:0,
-      nav:true,
-      autoHeight: true,
-      autoplay: false,
-      autoplayTimeout:7000,
-      navText: [ '<span class="flaticon-back-1"></span>', '<span class="flaticon-arrow-pointing-to-right"></span>' ],
-      responsive:{
-        0:{
-          items:1
-        },
-        600:{
-          items:1
-        },
-        800:{
-          items:1
-        },
-        1024:{
-          items:1
-        },
-        1200:{
-          items:1
+    
+      $('.main-slider-carousel').owlCarousel({
+        animateOut: 'fadeOut',
+        animateIn: 'fadeIn',
+        loop: false,
+        margin: 0,
+        nav: true,
+        autoHeight: true,
+        autoplay: false,
+        autoplayTimeout: 7000,
+        navText: ['<span class="flaticon-back-1"></span>', '<span class="flaticon-arrow-pointing-to-right"></span>'],
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 1
+          },
+          800: {
+            items: 1
+          },
+          1024: {
+            items: 1
+          },
+          1200: {
+            items: 1
+          }
         }
-      }
-    }); 
-
+      });
+    
   }
 
 }
