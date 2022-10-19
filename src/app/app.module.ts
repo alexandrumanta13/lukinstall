@@ -102,7 +102,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     ArticolComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     FormsModule,
     HttpClientModule,

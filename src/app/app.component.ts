@@ -84,10 +84,10 @@ export class AppComponent {
     headers.append('Accept', 'application/json');
     let options = { headers: headers };
 
-    this._httpClient.post('https://www.lukinstall.ro/data/save-ip.php', { "ip": ip }, options)
-      .subscribe((response: any) => {
-        console.log(response);
-      });
+    // this._httpClient.post('https://www.lukinstall.ro/data/save-ip.php', { "ip": ip }, options)
+    //   .subscribe((response: any) => {
+    //     console.log(response);
+    //   });
 
   }
 
@@ -122,7 +122,7 @@ export class AppComponent {
   }
 
   ngAfterViewInit() {
-    this.getIP();
+    //this.getIP();
     // setTimeout(() => {
     //   $('.preloader').delay(200).fadeOut(500);
     //   (<HTMLElement>document.querySelector('.preloader')).classList.add('hidden');

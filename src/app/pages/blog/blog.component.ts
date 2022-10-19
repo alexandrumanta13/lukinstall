@@ -45,7 +45,7 @@ export class BlogComponent implements OnInit {
       {
         id: 5,
         image: "/assets/images/blog/cupru-960x400.jpg",
-        link: "/blog/articol/bateria-de-chiuveta-cu-senzori-avantaje-si-dezavantaje/5",
+        link: "/blog/articol/instalatii-de-incalzire-realizate-cu-tevi-de-cupru",
         title: "Instalatii de incalzire – Instalatiile realizate cu tevi de cupru",
         description: "Instalatii de incalzire profesionale realizate in totalitate cu tevi de cupru. In mod tradiţional, ţevile de cupru sunt utilizate la sistemele de încălzire. Cu ajutoprul lor, pot fi executate instalatii de incalzire cu radiatoare sau încălzire de suprafaţă (pardoseală şi perete). Performanţa cuprului a [...]"
       },
